@@ -16,9 +16,9 @@ editor_options:
   markdown: 
     wrap: sentence
 bibliography: references.bib
-#csl: elife.csl
-#csl: nature.csl
-csl: nature-no-superscript.csl
+#csl: ./csl/elife.csl
+#csl: ./csl/nature.csl
+csl: ./csl/nature-no-superscript.csl
 #link-citations: true
 ---
 
@@ -840,7 +840,7 @@ ppol<- ppol + stat_pvalue_manual(
 
 <a id="fig3F"></a>
 
-```{r fig3F, echo=FALSE, dpi=72, fig.cap= "<B>Figure 3. PfGDPD is essential for asexual blood stage development.</B> F) Haemozoin content of individual parasites measured as transmitted polarized light at 44hpi in cycle 0 and 24h in cycle 1. (crossbar represents median; n=50; Student t-test with Bonferroni adjusted p-value)"}
+```{r fig3F, warning=FALSE, echo=FALSE, dpi=72, fig.cap= "<B>Figure 3. PfGDPD is essential for asexual blood stage development.</B> F) Haemozoin content of individual parasites measured as transmitted polarized light at 44hpi in cycle 0 and 24h in cycle 1. (crossbar represents median; n=50; Student t-test with Bonferroni adjusted p-value)"}
 
 ppol
 
@@ -1455,7 +1455,8 @@ pProp<- data.prop %>%
 
 iplot5A <- ggplotly(pProp, tooltip=c("x","y"))
 iplot5B <- ggplotly(pDiff, tooltip=c("x","y"))
-iplot5 <- subplot(iplot5A, iplot5B, nrows = 1)
+iplot5 <- subplot(iplot5A, iplot5B, nrows = 1, shareX=TRUE, shareY=TRUE) %>% 
+    layout(showlegend=T, legend = list(orientation = "h"))
 ```
 
 ### Experimental setup
@@ -1575,7 +1576,8 @@ pProp<- data.prop %>%
 
 iplot6A <- ggplotly(pProp, tooltip=c("x","y"))
 iplot6B <- ggplotly(pDiff, tooltip=c("x","y"))
-iplot6 <- subplot(iplot6A, iplot6B, nrows = 1)
+iplot6 <- subplot(iplot6A, iplot6B, nrows = 1, shareX=TRUE, shareY=TRUE) %>% 
+    layout(showlegend=T, legend = list(orientation = "h"))
 ```
 
 ### Experimental setup
@@ -1951,7 +1953,7 @@ pCholine<-ggplot(GDPD.enzassay, aes(x=Sample,y=Choline,fill = as.factor(Incubati
 
 iplot7A <- ggplotly(pGPC, tooltip=c("x","y"))
 iplot7B <- ggplotly(pCholine, tooltip=c("x","y"))
-iplot7 <- subplot(iplot7A, iplot7B, nrows = 1) %>%
+iplot7 <- subplot(iplot7A, iplot7B, nrows = 1,  shareX=TRUE, shareY=TRUE) %>%
   layout(legend = list(
       orientation = "h"
     )
