@@ -1,0 +1,13 @@
+name: GDPD
+title: GDPD
+username:
+account: abbhinay
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6359052
+bundleId: 6162133
+url: https://abbhinay.shinyapps.io/GDPD/
+when: 1659538844.72359
+lastSyncTime: 1659538844.7236
+asMultiple: FALSE
+asStatic: FALSE

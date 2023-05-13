@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+  <title>A choline-releasing glycerophosphodiesterase essential for phosphatidylcholine biosynthesis and blood stage development in the malaria parasite</title>
+
+  <meta property="description" itemprop="description" content="A new article created using the Distill format."/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-08-03"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-08-03"/>
+  <meta name="article:author" content="Abhinay Ramaprasad"/>
+  <meta name="article:author" content="Paul-Christian Burda"/>
+  <meta name="article:author" content="Enrica Calvani"/>
+  <meta name="article:author" content="Aaron Sait"/>
+  <meta name="article:author" content="Susana Alejandra Palma-Duran"/>
+  <meta name="article:author" content="Chrislaine Withers-Martinez"/>
+  <meta name="article:author" content="Fiona Hackett"/>
+  <meta name="article:author" content="James MacRae"/>
+  <meta name="article:author" content="Lucy Collinson"/>
+  <meta name="article:author" content="Tim-Wolf Gilberger"/>
+  <meta name="article:author" content="Michael J Blackman"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="A choline-releasing glycerophosphodiesterase essential for phosphatidylcholine biosynthesis and blood stage development in the malaria parasite"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A new article created using the Distill format."/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="A choline-releasing glycerophosphodiesterase essential for phosphatidylcholine biosynthesis and blood stage development in the malaria parasite"/>
+  <meta property="twitter:description" content="A new article created using the Distill format."/>
+
+  <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Contribution of the precursors and interplay of the pathways in the phospholipid metabolism of the malaria parasite;citation_publication_date=2018;citation_volume=59;citation_doi=10.1194/jlr.m085589;citation_author=Sharon Wein;citation_author=Salma Ghezal;citation_author=Corinne Buré;citation_author=Marjorie Maynadier;citation_author=Christian Périgaud;citation_author=Henri J. Vial;citation_author=Isabelle Lefebvre-Tournier;citation_author=Kai Wengelnik;citation_author=Rachel Cerdan"/>
+  <meta name="citation_reference" content="citation_title=Lysophosphatidylcholine Regulates Sexual Stage Differentiation in the Human Malaria Parasite Plasmodium falciparum;citation_publication_date=2017;citation_volume=171;citation_doi=10.1016/j.cell.2017.10.020;citation_author=Nicolas M. B. Brancucci;citation_author=Joseph P. Gerdt;citation_author=ChengQi Wang;citation_author=Mariana De Niz;citation_author=Nisha Philip;citation_author=Swamy R. Adapa;citation_author=Min Zhang;citation_author=Eva Hitz;citation_author=Igor Niederwieser;citation_author=Sylwia D. Boltryk;citation_author=Marie-Claude Laffitte;citation_author=Martha A. Clark;citation_author=Christof Grüring;citation_author=Deepali Ravel;citation_author=Alexandra Blancke Soares;citation_author=Allison Demas;citation_author=Selina Bopp;citation_author=Belén Rubio-Ruiz;citation_author=Ana Conejo-Garcia;citation_author=Dyann F. Wirth;citation_author=Edyta Gendaszewska-Darmach;citation_author=Manoj T. Duraisingh;citation_author=John H. Adams;citation_author=Till S. Voss;citation_author=Andrew P. Waters;citation_author=Rays H. Y. Jiang;citation_author=Jon Clardy;citation_author=Matthias Marti"/>
+  <meta name="citation_reference" content="citation_title=Disruption of the Plasmodium falciparum PfPMT Gene Results in a Complete Loss of Phosphatidylcholine Biosynthesis via the Serine-Decarboxylase-Phosphoethanolamine-Methyltransferase Pathway and Severe Growth and Survival Defects;citation_publication_date=2008;citation_volume=283;citation_doi=10.1074/jbc.m804360200;citation_author=William Harold Witola;citation_author=Kamal El Bissati;citation_author=Gabriella Pessi;citation_author=Changan Xie;citation_author=Paul D. Roepe;citation_author=Choukri Ben Mamoun"/>
+  <meta name="citation_reference" content="citation_title=Inhibitors of choline transport into Plasmodium-infected erythrocytes are effective antiplasmodial compounds in vitro;citation_publication_date=1985;citation_volume=34;citation_doi=10.1016/0006-2952(85)90390-9;citation_author=Marie L. Ancelin;citation_author=Henri J. Vial;citation_author=Jean R. Philippot"/>
+  <meta name="citation_reference" content="citation_title=Quaternary ammonium compounds efficiently inhibit Plasmodium falciparum growth in vitro by impairment of choline transport;citation_publication_date=1986;citation_volume=29;citation_doi=10.1128/aac.29.5.814;citation_author=M L Ancelin;citation_author=H J Vial"/>
+  <meta name="citation_reference" content="citation_title=Plasmodium falciparum Choline Kinase Inhibition Leads to a Major Decrease in Phosphatidylethanolamine Causing Parasite Death;citation_publication_date=2016;citation_volume=6;citation_doi=10.1038/srep33189;citation_author=Lucía Serrán-Aguilera;citation_author=Helen Denton;citation_author=Belén Rubio-Ruiz;citation_author=Borja López-Gutiérrez;citation_author=Antonio Entrena;citation_author=Luis Izquierdo;citation_author=Terry K. Smith;citation_author=Ana Conejo-García;citation_author=Ramon Hurtado-Guerrero"/>
+  <meta name="citation_reference" content="citation_title=&lt;i&gt;Plasmodium falciparum&lt;/i&gt;CTP:phosphocholine cytidylyltransferase possesses two functional catalytic domains and is inhibited by a CDP-choline analog selected from a virtual screening;citation_publication_date=2015;citation_volume=589;citation_doi=10.1016/j.febslet.2015.03.003;citation_author=Alicia Contet;citation_author=Emilie Pihan;citation_author=Marina Lavigne;citation_author=Kai Wengelnik;citation_author=Sweta Maheshwari;citation_author=Henri Vial;citation_author=Dominique Douguet;citation_author=Rachel Cerdan"/>
+  <meta name="citation_reference" content="citation_title=Characterization of the choline carrier of Plasmodium falciparum: a route for the selective delivery of novel antimalarial drugs;citation_publication_date=2004;citation_volume=104;citation_doi=10.1182/blood-2004-03-1084;citation_author=Giancarlo A. Biagini;citation_author=Erica M. Pasini;citation_author=Ruth Hughes;citation_author=Harry P. De Koning;citation_author=Henri J. Vial;citation_author=Paul M. O’Neill;citation_author=Stephen A. Ward;citation_author=Patrick G. Bray"/>
+  <meta name="citation_reference" content="citation_title=Glycerophosphocholine Catabolism as a New Route for Choline Formation for Phosphatidylcholine Synthesis by the Kennedy Pathway;citation_publication_date=2005;citation_volume=280;citation_doi=10.1074/jbc.m507700200;citation_author=J. Pedro Fernández-Murray;citation_author=Christopher R. McMaster"/>
+  <meta name="citation_reference" content="citation_title=Structure and biological function of ENPP6, a choline-specific glycerophosphodiester-phosphodiesterase;citation_publication_date=2016;citation_volume=6;citation_doi=10.1038/srep20995;citation_author=Junko Morita;citation_author=Kuniyuki Kano;citation_author=Kazuki Kato;citation_author=Hiroyuki Takita;citation_author=Hideki Sakagami;citation_author=Yasuo Yamamoto;citation_author=Emiko Mihara;citation_author=Hirofumi Ueda;citation_author=Takanao Sato;citation_author=Hidetoshi Tokuyama;citation_author=Hiroyuki Arai;citation_author=Hiroaki Asou;citation_author=Junichi Takagi;citation_author=Ryuichiro Ishitani;citation_author=Hiroshi Nishimasu;citation_author=Osamu Nureki;citation_author=Junken Aoki"/>
+  <meta name="citation_reference" content="citation_title=Choline-releasing glycerophosphodiesterase EDI3 drives tumor cell migration and metastasis;citation_publication_date=2012;citation_volume=109;citation_doi=10.1073/pnas.1117654109;citation_author=Joanna D. Stewart;citation_author=Rosemarie Marchan;citation_author=Michaela S. Lesjak;citation_author=Joerg Lambert;citation_author=Roland Hergenroeder;citation_author=James K. Ellis;citation_author=Chung-Ho Lau;citation_author=Hector C. Keun;citation_author=Gerd Schmitz;citation_author=Juergen Schiller;citation_author=Mandy Eibisch;citation_author=Christian Hedberg;citation_author=Herbert Waldmann;citation_author=Ekkehart Lausch;citation_author=Berno Tanner;citation_author=Jalid Sehouli;citation_author=Jens Sagemueller;citation_author=Hagen Staude;citation_author=Eric Steiner;citation_author=Jan G. Hengstler"/>
+  <meta name="citation_reference" content="citation_title=Characterization of a glycerophosphodiesterase with an unusual tripartite distribution and an important role in the asexual blood stages of Plasmodium falciparum;citation_publication_date=2012;citation_volume=186;citation_doi=10.1016/j.molbiopara.2012.09.004;citation_author=Titilola Denloye;citation_author=Seema Dalal;citation_author=Michael Klemba"/>
+  <meta name="citation_reference" content="citation_title=Crystal structure of glycerophosphodiester phosphodiesterase from Agrobacterium tumefaciens by SAD with a large asymmetric unit;citation_publication_date=2006;citation_volume=65;citation_doi=10.1002/prot.21079;citation_author=Krishnamurthy N. Rao;citation_author=Jeffrey B. Bonanno;citation_author=Stephen K. Burley;citation_author=Subramanyam Swaminathan"/>
+  <meta name="citation_reference" content="citation_title=Highly accurate protein structure prediction with AlphaFold;citation_publication_date=2021;citation_volume=596;citation_doi=10.1038/s41586-021-03819-2;citation_author=John Jumper;citation_author=Richard Evans;citation_author=Alexander Pritzel;citation_author=Tim Green;citation_author=Michael Figurnov;citation_author=Olaf Ronneberger;citation_author=Kathryn Tunyasuvunakool;citation_author=Russ Bates;citation_author=Augustin Žídek;citation_author=Anna Potapenko;citation_author=Alex Bridgland;citation_author=Clemens Meyer;citation_author=Simon A. A. Kohl;citation_author=Andrew J. Ballard;citation_author=Andrew Cowie;citation_author=Bernardino Romera-Paredes;citation_author=Stanislav Nikolov;citation_author=Rishub Jain;citation_author=Jonas Adler;citation_author=Trevor Back;citation_author=Stig Petersen;citation_author=David Reiman;citation_author=Ellen Clancy;citation_author=Michal Zielinski;citation_author=Martin Steinegger;citation_author=Michalina Pacholska;citation_author=Tamas Berghammer;citation_author=Sebastian Bodenstein;citation_author=David Silver;citation_author=Oriol Vinyals;citation_author=Andrew W. Senior;citation_author=Koray Kavukcuoglu;citation_author=Pushmeet Kohli;citation_author=Demis Hassabis"/>
+  <meta name="citation_reference" content="citation_title=AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models;citation_publication_date=2021;citation_volume=50;citation_doi=10.1093/nar/gkab1061;citation_author=Mihaly Varadi;citation_author=Stephen Anyango;citation_author=Mandar Deshpande;citation_author=Sreenath Nair;citation_author=Cindy Natassia;citation_author=Galabina Yordanova;citation_author=David Yuan;citation_author=Oana Stroe;citation_author=Gemma Wood;citation_author=Agata Laydon;citation_author=Augustin Žídek;citation_author=Tim Green;citation_author=Kathryn Tunyasuvunakool;citation_author=Stig Petersen;citation_author=John Jumper;citation_author=Ellen Clancy;citation_author=Richard Green;citation_author=Ankur Vora;citation_author=Mira Lutfi;citation_author=Michael Figurnov;citation_author=Andrew Cowie;citation_author=Nicole Hobbs;citation_author=Pushmeet Kohli;citation_author=Gerard Kleywegt;citation_author=Ewan Birney;citation_author=Demis Hassabis;citation_author=Sameer Velankar"/>
+  <meta name="citation_reference" content="citation_title=Uncovering the essential genes of the human malaria parasite &lt;i&gt;Plasmodium falciparum&lt;/i&gt; by saturation mutagenesis;citation_publication_date=2018;citation_volume=360;citation_doi=10.1126/science.aap7847;citation_author=Min Zhang;citation_author=Chengqi Wang;citation_author=Thomas D. Otto;citation_author=Jenna Oberstaller;citation_author=Xiangyun Liao;citation_author=Swamy R. Adapa;citation_author=Kenneth Udenze;citation_author=Iraad F. Bronner;citation_author=Deborah Casandra;citation_author=Matthew Mayho;citation_author=Jacqueline Brown;citation_author=Suzanne Li;citation_author=Justin Swanson;citation_author=Julian C. Rayner;citation_author=Rays H. Y. Jiang;citation_author=John H. Adams"/>
+  <meta name="citation_reference" content="citation_title=A genetic system to study Plasmodium falciparum protein function;citation_publication_date=2017;citation_volume=14;citation_doi=10.1038/nmeth.4223;citation_author=Jakob Birnbaum;citation_author=Sven Flemming;citation_author=Nick Reichard;citation_author=Alexandra Blancke Soares;citation_author=Paolo Mesén-Ramírez;citation_author=Ernst Jonscher;citation_author=Bärbel Bergmann;citation_author=Tobias Spielmann"/>
+  <meta name="citation_reference" content="citation_title=Human Malaria Parasites in Continuous Culture;citation_publication_date=1976;citation_volume=193;citation_doi=10.1126/science.781840;citation_author=William Trager;citation_author=James B. Jensen"/>
+  <meta name="citation_reference" content="citation_title=Adaptation of the genetically tractable malaria pathogen &lt;i&gt;Plasmodium knowlesi&lt;/i&gt; to continuous culture in human erythrocytes;citation_publication_date=2012;citation_volume=110;citation_doi=10.1073/pnas.1216457110;citation_author=Robert W. Moon;citation_author=Joanna Hall;citation_author=Farania Rangkuti;citation_author=Yung Shwen Ho;citation_author=Neil Almond;citation_author=Graham H. Mitchell;citation_author=Arnab Pain;citation_author=Anthony A. Holder;citation_author=Michael J. Blackman"/>
+  <meta name="citation_reference" content="citation_title=NIH Image to ImageJ: 25 years of image analysis;citation_publication_date=2012;citation_volume=9;citation_doi=10.1038/nmeth.2089;citation_author=Caroline A Schneider;citation_author=Wayne S Rasband;citation_author=Kevin W Eliceiri"/>
+  <meta name="citation_reference" content="citation_title=Robust inducible Cre recombinase activity in the human malaria parasite  &lt;i&gt;P lasmodium falciparum&lt;/i&gt;  enables efficient gene deletion within a single asexual erythrocytic growth cycle;citation_publication_date=2013;citation_volume=88;citation_doi=10.1111/mmi.12206;citation_author=Christine R. Collins;citation_author=Sujaan Das;citation_author=Eleanor H. Wong;citation_author=Nicole Andenmatten;citation_author=Robert Stallmach;citation_author=Fiona Hackett;citation_author=Jean-Paul Herman;citation_author=Sylke Müller;citation_author=Markus Meissner;citation_author=Michael J. Blackman"/>
+  <meta name="citation_reference" content="citation_title=Potent Inhibitors of &lt;i&gt;Plasmodium&lt;/i&gt; Phospholipid Metabolism with a Broad Spectrum of In Vitro Antimalarial Activities;citation_publication_date=2003;citation_volume=47;citation_doi=10.1128/aac.47.8.2590-2597.2003;citation_author=Marie L. Ancelin;citation_author=Michele Calas;citation_author=Valerie Vidal-Sailhan;citation_author=Serge Herbute;citation_author=Pascal Ringwald;citation_author=Henri J. Vial"/>
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","author","output","runtime","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["A choline-releasing glycerophosphodiesterase essential for phosphatidylcholine biosynthesis and blood stage development in the malaria parasite"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"character","attributes":{},"value":["2022-08-03"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Abhinay Ramaprasad"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Malaria Biochemistry Laboratory The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Paul-Christian Burda"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Enrica Calvani"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Mass Spectrometry Science Technology Platform, The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Aaron Sait"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Electron Microscopy Science Technology Platform, The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Susana Alejandra Palma-Duran"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Mass Spectrometry Science Technology Platform, The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Chrislaine Withers-Martinez"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Malaria Biochemistry Laboratory, The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Fiona Hackett"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Malaria Biochemistry Laboratory, The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["James MacRae"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Mass Spectrometry Science Technology Platform, The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Lucy Collinson"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Electron Microscopy Science Technology Platform, The Francis Crick Institute"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Tim-Wolf Gilberger"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Michael J Blackman"]},{"type":"character","attributes":{},"value":["https://github.com/yihui"]},{"type":"character","attributes":{},"value":["Malaria Biochemistry Laboratory, The Francis Crick Institute | Faculty of Infectious and Tropical Diseases, London School of Hygiene & Tropical Medicine"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]},{"type":"character","attributes":{},"value":["0000-0003-0645-5666"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article","toc_float"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","number_sections","toc_depth","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[6]},{"type":"logical","attributes":{},"value":[true]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["collapsed","smooth_scroll"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["shiny_prerendered"]},{"type":"character","attributes":{},"value":["references.bib"]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["csl/elife.csl","csl/nature-no-superscript.csl","csl/nature.csl","Figures/2A.png","Figures/2B.png","Figures/2CDE.png","Figures/2Gi.png","Figures/3A.png","Figures/3E.png","Figures/4A.png","Figures/4D.png","Figures/4Ei.png","Figures/5A.png","Figures/5B.png","Figures/5C.png","Figures/Fig1_hypothesis.png","Figures/Fig1.png","Figures/S10.png","Figures/S1AB.png","Figures/S2.png","Figures/S3ABCDE.png","Figures/S3F.png","Figures/S3GH.png","Figures/S4.png","Figures/S6.png","Figures/S7.png","Figures/S8.png","Figures/S9.png","GDPD_files/2A.png","GDPD_files/2B.png","GDPD_files/2CDE.png","GDPD_files/3A.png","GDPD_files/3E.png","GDPD_files/4A.png","GDPD_files/4D.png","GDPD_files/4Ei.png","GDPD_files/5A.png","GDPD_files/5B.png","GDPD_files/5C.png","GDPD_files/bootstrap-accessibility.min.css","GDPD_files/bootstrap-accessibility.min.js","GDPD_files/bootstrap-accessibility.min(1).css","GDPD_files/bootstrap-accessibility.min(2).js","GDPD_files/bootstrap.min.css","GDPD_files/bootstrap.min.js","GDPD_files/bootstrap.min(1).css","GDPD_files/bootstrap.min(2).js","GDPD_files/bootstrap.min(3).css","GDPD_files/bootstrap.min(4).js","GDPD_files/clean.css","GDPD_files/clean.js","GDPD_files/crosstalk.min.css","GDPD_files/crosstalk.min.js","GDPD_files/crosstalk.min(1).css","GDPD_files/crosstalk.min(2).js","GDPD_files/crosstalk.min(3).css","GDPD_files/crosstalk.min(4).js","GDPD_files/Fig1_hypothesis.png","GDPD_files/Fig1.png","GDPD_files/fig3C-1.png","GDPD_files/fig3D-1.png","GDPD_files/fig3F-1.png","GDPD_files/fig4C-1.png","GDPD_files/fig4E-1.png","GDPD_files/header-attrs.js","GDPD_files/htmlwidgets.js","GDPD_files/htmlwidgets(1).js","GDPD_files/htmlwidgets(2).js","GDPD_files/ion.rangeSlider.css","GDPD_files/ion.rangeSlider.min.js","GDPD_files/ion.rangeSlider.min(1).js","GDPD_files/ion.rangeSlider(1).css","GDPD_files/jquery-ui.min.js","GDPD_files/jquery.magnific-popup.min.js","GDPD_files/jquery.min.js","GDPD_files/jquery.min(1).js","GDPD_files/jquery.min(2).js","GDPD_files/magnific-popup.css","GDPD_files/MathJax.js","GDPD_files/myclean.css","GDPD_files/plotly-htmlwidgets.css","GDPD_files/plotly-htmlwidgets(1).css","GDPD_files/plotly-htmlwidgets(2).css","GDPD_files/plotly-latest.min.js","GDPD_files/plotly-latest.min(1).js","GDPD_files/plotly-latest.min(2).js","GDPD_files/plotly.js","GDPD_files/plotly(1).js","GDPD_files/plotly(2).js","GDPD_files/rmd_loader.css","GDPD_files/rmd_loader.gif","GDPD_files/rmd_loader.js","GDPD_files/rmd_perf.css","GDPD_files/rmd_perf.js","GDPD_files/rsiframe.js","GDPD_files/S1.png","GDPD_files/S10.png","GDPD_files/S2.png","GDPD_files/S3ABCDE.png","GDPD_files/S3F.png","GDPD_files/S3GH.png","GDPD_files/S4.png","GDPD_files/S6.png","GDPD_files/S7.png","GDPD_files/S8.png","GDPD_files/S9.png","GDPD_files/saved_resource.html","GDPD_files/saved_resource(1).html","GDPD_files/shiny.min.css","GDPD_files/shiny.min.js","GDPD_files/shiny.min(1).css","GDPD_files/shiny.min(2).js","GDPD_files/shiny.min(3).css","GDPD_files/shiny.min(4).js","GDPD_files/shinyWidgets-bindings.min.js","GDPD_files/shinyWidgets-bindings.min(1).js","GDPD_files/shinyWidgets.min.css","GDPD_files/shinyWidgets.min(1).css","GDPD_files/strftime-min.js","GDPD_files/strftime-min(1).js","GDPD_files/tabsets.js","GDPD_files/typedarray.min.js","GDPD_files/typedarray.min(1).js","GDPD_files/typedarray.min(2).js","GDPD.html","myclean.css","mymaterial.css","Rawdata/B4_d9labelling.csv","Rawdata/B4G1Chorates.csv","Rawdata/cholinetitrations.csv","Rawdata/GDPDcholinegrowthassay.csv","Rawdata/GDPDcomplementation_oligos.xlsx","Rawdata/GDPDcomplementation.csv","Rawdata/GDPDenzymaticassay.csv","Rawdata/GDPDGFP_oligos.xlsx","Rawdata/GDPDgrowthassay.csv","Rawdata/GDPDinvasionassay.csv","Rawdata/GDPDlipidomics_exp1.csv","Rawdata/GDPDlipidomics_exp2_d9labelling.csv","Rawdata/GDPDlipidomics_exp2.csv","Rawdata/GDPDloxPintHA_oligos.xlsx","Rawdata/GDPDloxPintHANeoR_oligos.xlsx","Rawdata/GDPDmerozoites.csv","Rawdata/GDPDpolarisation.csv","Rawdata/GDPDrates.csv","Rawdata/GDPDstagequant.csv","Rawdata/NF54GDPD_growthassay.csv","references.bib"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+  <!-- HEAD_CONTENT -->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"A choline-releasing glycerophosphodiesterase essential for phosphatidylcholine biosynthesis and blood stage development in the malaria parasite","description":"A new article created using the Distill format.","authors":[{"author":"Abhinay Ramaprasad","authorURL":"https://github.com/yihui","affiliation":"Malaria Biochemistry Laboratory The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Paul-Christian Burda","authorURL":"https://github.com/yihui","affiliation":"Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Enrica Calvani","authorURL":"https://github.com/yihui","affiliation":"Mass Spectrometry Science Technology Platform, The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Aaron Sait","authorURL":"https://github.com/yihui","affiliation":"Electron Microscopy Science Technology Platform, The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Susana Alejandra Palma-Duran","authorURL":"https://github.com/yihui","affiliation":"Mass Spectrometry Science Technology Platform, The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Chrislaine Withers-Martinez","authorURL":"https://github.com/yihui","affiliation":"Malaria Biochemistry Laboratory, The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Fiona Hackett","authorURL":"https://github.com/yihui","affiliation":"Malaria Biochemistry Laboratory, The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"James MacRae","authorURL":"https://github.com/yihui","affiliation":"Mass Spectrometry Science Technology Platform, The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Lucy Collinson","authorURL":"https://github.com/yihui","affiliation":"Electron Microscopy Science Technology Platform, The Francis Crick Institute","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Tim-Wolf Gilberger","authorURL":"https://github.com/yihui","affiliation":"Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"},{"author":"Michael J Blackman","authorURL":"https://github.com/yihui","affiliation":"Malaria Biochemistry Laboratory, The Francis Crick Institute | Faculty of Infectious and Tropical Diseases, London School of Hygiene & Tropical Medicine","affiliationURL":"https://example.com/spacelysprokets","orcidID":"0000-0003-0645-5666"}],"publishedDate":"2022-08-03T00:00:00.000+01:00","citationText":"Ramaprasad, et al., 2022"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>A choline-releasing glycerophosphodiesterase essential for phosphatidylcholine biosynthesis and blood stage development in the malaria parasite</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>A new article created using the Distill format.</p></p>
+</div>
+
+<div class="d-byline">
+  Abhinay Ramaprasad <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Malaria Biochemistry Laboratory The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Paul-Christian Burda <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Enrica Calvani <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Mass Spectrometry Science Technology Platform, The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Aaron Sait <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Electron Microscopy Science Technology Platform, The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Susana Alejandra Palma-Duran <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Mass Spectrometry Science Technology Platform, The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Chrislaine Withers-Martinez <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Malaria Biochemistry Laboratory, The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Fiona Hackett <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Malaria Biochemistry Laboratory, The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   James MacRae <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Mass Spectrometry Science Technology Platform, The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Lucy Collinson <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Electron Microscopy Science Technology Platform, The Francis Crick Institute)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Tim-Wolf Gilberger <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+,   Michael J Blackman <a href="https://github.com/yihui" class="uri">https://github.com/yihui</a> (Malaria Biochemistry Laboratory, The Francis Crick Institute | Faculty of Infectious and Tropical Diseases, London School of Hygiene &amp; Tropical Medicine)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+<br/>2022-08-03
+</div>
+
+<div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="section-TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#section-abstract">Abstract</a></li>
+<li><a href="#section-introduction">Introduction</a>
+<ul>
+<li><a href="#section-importance-of-phospholipid-synthesis">Importance of phospholipid synthesis</a></li>
+<li><a href="#section-phosphatidylcholine-biosynthesis">Phosphatidylcholine biosynthesis</a></li>
+<li><a href="#section-pc-biosynthesis-is-a-drug-target">PC biosynthesis is a drug target</a></li>
+<li><a href="#section-where-does-the-parasite-get-its-choline">Where does the parasite get its choline?</a></li>
+</ul></li>
+<li><a href="#section-question">Question</a>
+<ul>
+<li><a href="#section-is-pfgdpd-involved-in-lysopc-breakdown-to-choline">Is PfGDPD involved in lysoPC breakdown to choline?</a>
+<ul>
+<li><a href="#section-figure1q"></a></li>
+</ul></li>
+</ul></li>
+<li><a href="#section-results">Results</a>
+<ul>
+<li><a href="#section-result1">Catalytically active PfGDPD is essential for <em>P. falciparum</em> blood stage growth</a>
+<ul>
+<li><a href="#section-where-does-pfgdpd-localise-to">Where does PfGDPD localise to?</a></li>
+<li><a href="#section-conditional-ablation-of-pfgdpd-expression">Conditional ablation of PfGDPD expression</a></li>
+<li><a href="#section-experimental-setup">Experimental setup</a></li>
+<li><a href="#section-figure-1">Figure</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<h1 id="section-abstract">Abstract</h1>
+<p>The malaria parasite <em>Plasmodium falciparum</em> synthesizes significant amounts of phospholipids to meet the demands of replication within red blood cells. De novo phosphatidylcholine (PC) biosynthesis via the Kennedy pathway is essential, requiring choline that is primarily sourced from host serum lysophosphatidylcholine (lysoPC). LysoPC also acts as an environmental sensor to regulate parasite sexual differentiation. Despite these critical roles for host lysoPC, the enzyme(s) involved in its breakdown to free choline for PC synthesis are unknown. Here we show that a parasite glycerophosphodiesterase (PfGDPD) is indispensable for blood stage parasite proliferation. Exogenous choline rescues growth of PfGDPD-null parasites, directly linking PfGDPD function to choline incorporation. Loss of PfGDPD reduces choline uptake from lysoPC, resulting in depletion of several PC species in the parasite, whilst purified PfGDPD releases choline from glycerophosphocholine <em>in vitro</em>. Our results identify PfGDPD as a choline-releasing glycerophosphodiesterase that mediates a critical step in PC biosynthesis and parasite survival.</p>
+<h1 id="section-introduction">Introduction</h1>
+<h2 id="section-importance-of-phospholipid-synthesis">Importance of phospholipid synthesis</h2>
+<p>Malaria parasites replicate within red blood cells (RBC). During intraerythrocytic growth, the parasite produces <em>de novo</em> large amounts of membrane to support expansion of its parasite plasma membrane (PPM), the parasitophorous vacuole membrane (PVM) and other membranous structures of the growing parasite, as well as for formation of daughter merozoites. This extensive membrane neogenesis, which culminates in a six-fold increase in the phospholipid content of the infected RBC <span class="citation" data-cites="Wein2018">(<a href="#section-ref-Wein2018" role="doc-biblioref">Wein et al. 2018</a>)</span>, requires an intense phase of phospholipid synthesis during the metabolically active trophozoite and schizont stages of the parasite life cycle.</p>
+<h2 id="section-phosphatidylcholine-biosynthesis">Phosphatidylcholine biosynthesis</h2>
+<p>Phosphatidylcholine (PC) is the most abundant membrane lipid in the malaria parasite, comprising 30-40% of total phospholipid <span class="citation" data-cites="Botté2013 Gulati2015">(<a href="#section-ref-Botté2013" role="doc-biblioref">Botté et al. 2013</a>; <a href="#section-ref-Gulati2015" role="doc-biblioref">Gulati et al. 2015</a>)</span>, and the parasite has evolved to produce this vital phospholipid via multiple enzymatic pathways from a variety of metabolic precursors from the host milieu <span class="citation" data-cites="Wein2018 Kilian2018">(<a href="#section-ref-Wein2018" role="doc-biblioref">Wein et al. 2018</a>; <a href="#section-ref-Kilian2018" role="doc-biblioref">Kilian et al. 2018</a>)</span> (Figure <a href="#fig:fig1">1</a>). Under normal conditions, ~89% of PC is synthesized from free choline and fatty acids via the CDP-choline-dependent Kennedy pathway that is common among eukaryotes<span class="citation" data-cites="Brancucci2017 Wein2018">(<a href="#section-ref-Brancucci2017" role="doc-biblioref">Brancucci et al. 2017</a>; <a href="#section-ref-Wein2018" role="doc-biblioref">Wein et al. 2018</a>)</span>. Choline is phosphorylated to phosphocholine (P-Cho) by choline kinase (CK) <span class="citation" data-cites="Ancelin1986">(<a href="#section-ref-Ancelin1986" role="doc-biblioref">Marie L. Ancelin and Vial 1986</a>)</span>, then converted to CDP-choline by a CTP:phosphocholine cytidyltransferase (CCT) <span class="citation" data-cites="Ancelin1989">(<a href="#section-ref-Ancelin1989" role="doc-biblioref">Marie L. Ancelin and Vial 1989</a>)</span> and finally condensed with diacylglycerol (DAG) by a choline/ethanolamine-phosphotransferase (CEPT) <span class="citation" data-cites="Vial1984">(<a href="#section-ref-Vial1984" role="doc-biblioref">Vial, Thuet, and Philippot 1984</a>)</span> to produce PC. PC is also generated via an alternate serine-decarboxylase-phosphoethanolamine-methyltransferase (SDPM) pathway also found in plants and nematodes, that uses host serine and ethanolamine (Eth) as precursors <span class="citation" data-cites="Pessi2004">(<a href="#section-ref-Pessi2004" role="doc-biblioref">Pessi, Kociubinski, and Mamoun 2004</a>)</span>. In this case, precursor P-Cho for the CDP-choline pathway is produced by triple methylation of phosphoethanolamine (P-Eth) by a phosphoethanolamine methyltransferase (PMT) <span class="citation" data-cites="Witola2008">(<a href="#section-ref-Witola2008" role="doc-biblioref">Witola et al. 2008</a>)</span>. Phosphoethanolamine is in turn generated from ethanolamine sourced either from the serum or converted from serine by an unidentified parasite serine decarboxylase. Unlike yeast and mammals, the malaria parasite is unable to convert PE directly to PC through phospholipid methyl transferase activity <span class="citation" data-cites="Witola2008">(<a href="#section-ref-Witola2008" role="doc-biblioref">Witola et al. 2008</a>)</span>, so the Kennedy and SDPM pathways intersect only at the point of PMT activity (Figure <a href="#fig:fig1">1</a>). PC can also be potentially produced by direct acylation of lysoPC via the Lands’ cycle by an unknown lysophosphatidylcholine acyltransferase (LPCAT). However, this pathway is considered to not contribute significantly to PC synthesis under normal conditions <span class="citation" data-cites="Wein2018">(<a href="#section-ref-Wein2018" role="doc-biblioref">Wein et al. 2018</a>)</span>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span><span class='st'>"./Figures/Fig1.png"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<div class="figure"><span style="display:block;" id="fig:fig1"></span>
+<img src="Figures/Fig1.png" alt="&lt;B&gt;Phosphatidylcholine (PC) synthesis in malaria parasites.&lt;/B&gt; The CDP-choline dependent Kennedy pathway, the SDPM pathway and Lands’ cycle produce PC from the metabolic precursors lysoPC, choline (Cho), ethanolamine (Eth), serine (Ser, including that obtained from digestion of haemoglobin, Hb), and fatty acids, all salvaged from the host milieu. PC is primarily produced through the Kennedy pathway using Cho sourced mainly from serum lysoPC. Breakdown of lysoPC into choline is thought to occur in the parasitophorous vacuole (PV) via a two-step hydrolysis process involving an unidentified lysophospholipase (LPL) and a glycerophosphodiesterase (GDPD; PF3D7_1406300) (this work). Other abbreviations: CCT, CTP:phosphocholine cytidyltransferase; CEPT, choline/ethanolamine-phosphotransferase; CK, choline kinase; DAG, diacylglycerol; EK, ethanolamine kinase; GPC, glycerophosphocholine; LPCAT, lysophosphatidylcholine acyltransferase; PMT, phosphoethanolamine methyltransferase; SD, serine decarboxylase. “?” indicates parasite enzymes not yet identified." width="1308" />
+<p class="caption">
+Figure 1: <B>Phosphatidylcholine (PC) synthesis in malaria parasites.</B> The CDP-choline dependent Kennedy pathway, the SDPM pathway and Lands’ cycle produce PC from the metabolic precursors lysoPC, choline (Cho), ethanolamine (Eth), serine (Ser, including that obtained from digestion of haemoglobin, Hb), and fatty acids, all salvaged from the host milieu. PC is primarily produced through the Kennedy pathway using Cho sourced mainly from serum lysoPC. Breakdown of lysoPC into choline is thought to occur in the parasitophorous vacuole (PV) via a two-step hydrolysis process involving an unidentified lysophospholipase (LPL) and a glycerophosphodiesterase (GDPD; PF3D7_1406300) (this work). Other abbreviations: CCT, CTP:phosphocholine cytidyltransferase; CEPT, choline/ethanolamine-phosphotransferase; CK, choline kinase; DAG, diacylglycerol; EK, ethanolamine kinase; GPC, glycerophosphocholine; LPCAT, lysophosphatidylcholine acyltransferase; PMT, phosphoethanolamine methyltransferase; SD, serine decarboxylase. “?” indicates parasite enzymes not yet identified.
+</p>
+</div>
+</div>
+<h2 id="section-pc-biosynthesis-is-a-drug-target">PC biosynthesis is a drug target</h2>
+<p>The crucial nature of PC biosynthesis for parasite survival has generated interest in the process as a potential target for antimalarial drug development <span class="citation" data-cites="Ancelin1986a Ancelin1985">(<a href="#section-ref-Ancelin1986a" role="doc-biblioref">M. L. Ancelin and Vial 1986</a>; <a href="#section-ref-Ancelin1985" role="doc-biblioref">Marie L. Ancelin, Vial, and Philippot 1985</a>)</span>. Choline analogs have potent antimalarial activity <span class="citation" data-cites="Ancelin2003">(<a href="#section-ref-Ancelin2003" role="doc-biblioref">Marie L. Ancelin et al. 2003</a>)</span>, whilst inhibiting or disrupting enzymes in the PC synthesis pathways severely reduces or blocks intraerythrocytic growth. As examples of this, compounds that inhibit <em>P. falciparum</em> CK (PfCK) <span class="citation" data-cites="Serrán-Aguilera2016">(<a href="#section-ref-Serrán-Aguilera2016" role="doc-biblioref">Serrán-Aguilera et al. 2016</a>)</span> or PfCCT <span class="citation" data-cites="Contet2015">(<a href="#section-ref-Contet2015" role="doc-biblioref">Contet et al. 2015</a>)</span> in the CDP-choline pathway kill the parasite, and disruption of the PfPMT gene to block PC synthesis via the SDPM pathway results in morphological and growth defects but is not lethal <span class="citation" data-cites="Witola2008">(<a href="#section-ref-Witola2008" role="doc-biblioref">Witola et al. 2008</a>)</span>. These findings suggest that the CDP-choline pathway provides the major route to PC synthesis whilst the SDPM pathway forms an important alternative route. An improved understanding of PC biosynthesis in <em>Plasmodium</em> may identify critical enzymes in the process that are potential drug targets.</p>
+<h2 id="section-where-does-the-parasite-get-its-choline">Where does the parasite get its choline?</h2>
+<p>The choline required for PC synthesis is primarily scavenged from host serum. Whilst free choline can cross the parasite plasma membrane efficiently through an unidentified carrier, choline transfer from serum into the infected RBC across the erythrocyte membrane is rate-limiting <span class="citation" data-cites="Biagini2004b Ancelin1985">(<a href="#section-ref-Biagini2004b" role="doc-biblioref">Biagini et al. 2004</a>; <a href="#section-ref-Ancelin1985" role="doc-biblioref">Marie L. Ancelin, Vial, and Philippot 1985</a>)</span>. Perhaps to overcome this limitation, the parasite has evolved to scavenge most of the required choline from exogenous lysoPC <span class="citation" data-cites="Wein2018 Brancucci2017">(<a href="#section-ref-Wein2018" role="doc-biblioref">Wein et al. 2018</a>; <a href="#section-ref-Brancucci2017" role="doc-biblioref">Brancucci et al. 2017</a>)</span>. Intriguingly, lysoPC also acts as an environmental sensor that controls sexual differentiation in <em>P. falciparum</em>. Active lysoPC metabolism into PC via the CDP-choline pathway prevents sexual commitment while in contrast limited availability of lysoPC reduces formation of asexual progeny and triggers differentiation into the transmissible gametocyte stages <span class="citation" data-cites="Brancucci2017">(<a href="#section-ref-Brancucci2017" role="doc-biblioref">Brancucci et al. 2017</a>)</span>. Metabolic labelling experiments showed that ~68% of free choline in the parasite comes from exogenous lysoPC, indicating that the majority of the lysoPC is broken down to choline before entering PC synthesis <span class="citation" data-cites="Brancucci2017">(<a href="#section-ref-Brancucci2017" role="doc-biblioref">Brancucci et al. 2017</a>)</span>. However, it is unclear how and where lysoPC is converted to choline in the parasite and the enzymes involved in process are unknown.</p>
+<h1 id="section-question">Question</h1>
+<h2 id="section-is-pfgdpd-involved-in-lysopc-breakdown-to-choline">Is PfGDPD involved in lysoPC breakdown to choline?</h2>
+<h3 id="section-figure1q"></h3>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span><span class='st'>"./Figures/Fig1_hypothesis.png"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<p><img src="Figures/Fig1_hypothesis.png" width="1315" /></p>
+</div>
+<p>LysoPC breakdown to free choline requires a two-step hydrolysis reaction: deacylation of lysoPC by a putative lysophospholipase to give glycerophosphocholine (GPC) that is then hydrolysed by a glycerophosphodiester phosphodiesterase (GDPD) to generate choline and glycerol-3-phosphate (G3P) (<a href="#section-figure1q">Figure 1</a>). GPC catabolism by GDPD has been shown to maintain a choline supply for CDP-choline-dependent PC biosynthesis in model eukaryotes <span class="citation" data-cites="Morita2016 Fernández-Murray2005 Stewart2012">(<a href="#section-ref-Morita2016" role="doc-biblioref">Morita et al. 2016</a>; <a href="#section-ref-Fernández-Murray2005" role="doc-biblioref">Fernández-Murray and McMaster 2005</a>; <a href="#section-ref-Stewart2012" role="doc-biblioref">Stewart et al. 2012</a>)</span>. Only one putative glycerophosphodiesterase gene (PfGDPD; PF3D7_1406300) has been identified in the malarial genome <span class="citation" data-cites="Denloye2012">(<a href="#section-ref-Denloye2012" role="doc-biblioref">Denloye, Dalal, and Klemba 2012</a>)</span>. The 475-residue predicted protein product has an N-terminal secretory signal peptide and a glycerophosphodiester phosphodiesterase domain (amino acid residues 24-466; InterPro entry IPR030395), which likely adopts a triosephosphate isomerase (TIM) barrel alpha/beta fold (<a href="https://alphafold.ebi.ac.uk/entry/Q8IM31" class="uri">https://alphafold.ebi.ac.uk/entry/Q8IM31</a>) <span class="citation" data-cites="Rao2006 Jumper2021 Varadi2022">(<a href="#section-ref-Rao2006" role="doc-biblioref">Rao et al. 2006</a>; <a href="#section-ref-Jumper2021" role="doc-biblioref">Jumper et al. 2021</a>; <a href="#section-ref-Varadi2022" role="doc-biblioref">Varadi et al. 2021</a>)</span>. The protein shares homology with prokaryotic GDPDs and contains a characteristic small GDPD-specific insertion (residues 75-275) within the TIM barrel structure. Recombinant PfGDPD has been shown to have hydrolytic activity towards GPC and localization studies have suggested that the protein is present in the parasite digestive vacuole (in which breakdown of host haemoglobin takes place), as well as the cytoplasm and parasitophorous vacuole (PV) <span class="citation" data-cites="Denloye2012">(<a href="#section-ref-Denloye2012" role="doc-biblioref">Denloye, Dalal, and Klemba 2012</a>)</span>. Repeated failed attempts to disrupt the PfGDPD gene <span class="citation" data-cites="Denloye2012">(<a href="#section-ref-Denloye2012" role="doc-biblioref">Denloye, Dalal, and Klemba 2012</a>)</span> and a genome-wide mutagenesis screen <span class="citation" data-cites="Zhang2018a">(<a href="#section-ref-Zhang2018a" role="doc-biblioref">Zhang et al. 2018</a>)</span> suggests its essentiality for asexual stage growth. However, its role in parasite phospholipid metabolism remains unknown.</p>
+<p>Here, we used a conditional gene disruption approach combined with chemical complementation and metabolomic analysis to examine the essentiality and function of PfGDPD in asexual blood stages of <em>P. falciparum</em>. Our results show that PfGDPD catalyzes a catabolic reaction that is key for lysoPC incorporation and PC synthesis in the parasite.</p>
+<h1 id="section-results">Results</h1>
+<h2 id="section-result1">Catalytically active PfGDPD is essential for <em>P. falciparum</em> blood stage growth</h2>
+<h3 id="section-where-does-pfgdpd-localise-to">Where does PfGDPD localise to?</h3>
+<p>To confirm the previously shown subcellular localization of PfGDPD <span class="citation" data-cites="Denloye2012">(<a href="#section-ref-Denloye2012" role="doc-biblioref">Denloye, Dalal, and Klemba 2012</a>)</span>, we tagged the endogenous protein at its C-terminus by fusing the gene to sequence encoding green fluorescent protein (GFP), using the selection-linked integration (SLI) system <span class="citation" data-cites="Birnbaum2017">(<a href="#section-ref-Birnbaum2017" role="doc-biblioref">Birnbaum et al. 2017</a>)</span> (Supplementary figure 1A). We verified correct integration of the targeting plasmid into the GDPD locus by PCR (Supplementary figure 1B). Live-cell microscopy of the resulting transgenic parasites revealed a cytoplasmic and PV localization (Figure 2A), supporting the results of the previous study <span class="citation" data-cites="Denloye2012">(<a href="#section-ref-Denloye2012" role="doc-biblioref">Denloye, Dalal, and Klemba 2012</a>)</span>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>xaringanExtra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/xaringanExtra/man/panelset.html'>use_panelset</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="l-page">
+<div class="panelset">
+<section id="section-figure" class="panel-name panel">
+<h4 class="panel-name">Figure</h4>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span><span class='st'>"./Figures/2A.png"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<div class="figure"><span style="display:block;" id="fig:fig2A"></span>
+<img src="Figures/2A.png" alt="&lt;B&gt;Figure 2. Subcellular localization and conditional ablation of PfGDPD.&lt;/B&gt; A) Endogenous PfGDPD tagged with GFP shows dual localization in the cytosol and PV in mature schizonts (top) and free merozoites (bottom). Scale bars, 5 $\mu$m." width="75%" />
+<p class="caption">
+Figure 2: <B>Figure 2. Subcellular localization and conditional ablation of PfGDPD.</B> A) Endogenous PfGDPD tagged with GFP shows dual localization in the cytosol and PV in mature schizonts (top) and free merozoites (bottom). Scale bars, 5 <span class="math inline">\(\mu\)</span>m.
+</p>
+</div>
+</div>
+</section>
+<section id="section-supplementary-figure" class="panel-name panel">
+<h4 class="panel-name">Supplementary Figure</h4>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span><span class='st'>"./Figures/S1AB.png"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<div class="figure"><span style="display:block;" id="fig:figS1AB"></span>
+<img src="Figures/S1AB.png" alt="&lt;B&gt;Supplementary Figure 1. Endogenous tagging and conditional disruption of PfGDPD.&lt;/B&gt; A) Schematic of SLI-based endogenous tagging of PfGDPD. GFP, green fluorescent protein; T2A, skip peptide; Neo-R, neomycin-resistance gene; hDHFR, human dihydrofolate reductase; asterisks, stop codons; arrows, promoters. B) Diagnostic PCR showing correct integration of the GFP-tagging construct in the GDPD locus." width="100%" />
+<p class="caption">
+Figure 3: <B>Supplementary Figure 1. Endogenous tagging and conditional disruption of PfGDPD.</B> A) Schematic of SLI-based endogenous tagging of PfGDPD. GFP, green fluorescent protein; T2A, skip peptide; Neo-R, neomycin-resistance gene; hDHFR, human dihydrofolate reductase; asterisks, stop codons; arrows, promoters. B) Diagnostic PCR showing correct integration of the GFP-tagging construct in the GDPD locus.
+</p>
+</div>
+</div>
+</section>
+<section id="section-methods" class="panel-name panel">
+<h4 class="panel-name">Methods</h4>
+<h5 id="section-plasmid-construction">Plasmid construction</h5>
+<p><font size="2"></p>
+<p>The GDPD:GFP line was made by endogenously tagging GDPD with GFP using the selection-linked integration (SLI) method <span class="citation" data-cites="Birnbaum2017">(<a href="#section-ref-Birnbaum2017" role="doc-biblioref">Birnbaum et al. 2017</a>)</span>. A GFP-tagging construct pSLI-PF3D7_1406300-GFP-GlmS-WT was generated by amplifying the C-terminal 858 bp of the endogenous gdpd gene (PF3D7_1406300) by PCR using primers PF3D7_1406300-TAG-fw/ PF3D7_1406300-TAG-rev and cloning into pSLI-GFP-GlmS-WT using NotI/MluI.</p>
+<p></font></p>
+<h5 id="section-parasite-culture-maintenance-synchronisation-and-transfection">Parasite culture maintenance, synchronisation and transfection</h5>
+<p><font size="2"></p>
+<p><em>P. falciparum</em> 3D7 line was maintained at 37°C in an atmosphere of 1% O<sub>2</sub>, 5% CO<sub>2</sub>, and 94% N<sub>2</sub> and cultured using RPMI complete medium containing 0.5% Albumax according to standard procedures <span class="citation" data-cites="Trager1976">(<a href="#section-ref-Trager1976" role="doc-biblioref">Trager and Jensen 1976</a>)</span>. For generation of stable integrant cell line GDPD:GFP, mature schizonts of 3D7 parasites were electroporated with 50 <span class="math inline">\(\mu\)</span>g of plasmid DNA using a Lonza Nucleofector II device <span class="citation" data-cites="Moon2013">(<a href="#section-ref-Moon2013" role="doc-biblioref">Moon et al. 2012</a>)</span>. Parasites were first selected in medium supplemented with 3 nM WR99210 (Jacobus Pharmaceuticals). Parasites containing the episomal plasmids selected with WR99210 were subsequently grown with 400 μg/ml Neomycin/G418 (Sigma) to select for integrants carrying the desired genomic modification as described previously <span class="citation" data-cites="Birnbaum2017">(<a href="#section-ref-Birnbaum2017" role="doc-biblioref">Birnbaum et al. 2017</a>)</span>. Successful integration was confirmed by diagnostic PCR using FIREpol DNA polymerase (Solis BioDyne).</p>
+<p></font></p>
+<h5 id="section-live-cell-microscopy">Live cell microscopy</h5>
+<p><font size="2"></p>
+<p>For live cell microscopy of GDPD:GFP parasites, parasites were incubated with 1 μg/ml DAPI in culture medium for 15 minutes at 37°C to stain nuclei before microscopic analysis. Parasite line was imaged on a Leica D6B fluorescence microscope, equipped with a Leica DFC9000 GT camera and a Leica Plan Apochromat 100x/1.4 oil objective. Image processing was performed using ImageJ <span class="citation" data-cites="Schneider2012">(<a href="#section-ref-Schneider2012" role="doc-biblioref">Schneider, Rasband, and Eliceiri 2012</a>)</span>.</p>
+<p></font></p>
+</section>
+<section id="section-sequences" class="panel-name panel">
+<h4 class="panel-name">Sequences</h4>
+<p><a href="./Rawdata/GDPDGFP_oligos.xlsx" download>Click to Download</a></p>
+</section>
+</div>
+</div>
+<h3 id="section-conditional-ablation-of-pfgdpd-expression">Conditional ablation of PfGDPD expression</h3>
+<p>Our attempts to knockout the pfgdpd gene using SLI-based targeted gene disruption failed, suggesting that PfGDPD fulfils an essential function for <em>P. falciparum</em> blood stage growth as previously suggested. To address the essentiality and function of PfGDPD, we used a conditional gene disruption strategy to delete sequence encoding the catalytic glycerophosphodiester phosphodiesterase domain. For this, we first flanked (“floxed”) the region with loxP sites using Cas9-enhanced homologous recombination in a <em>P. falciparum</em> line stably expressing DiCre, a rapamycin (RAP) inducible form of Cre recombinase <span class="citation" data-cites="Collins2013">(<a href="#section-ref-Collins2013" role="doc-biblioref">Collins et al. 2013</a>)</span> (Figure 2B and Supplementary Figure 1J). A triple-hemagglutinin (3HA) epitope was simultaneously fused to the C-terminal end of the gene product, allowing confirmation of PfGDPD expression in the modified parasite line (called GDPD:loxPint:HA).</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>peakareas</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/utils/read.table.html'>read.csv</a></span><span class='op'>(</span><span class='st'>"./Rawdata/GDPDlipidomics_exp1.csv"</span><span class='op'>)</span>
+
+<span class='va'>foldchange</span><span class='op'>&lt;-</span><span class='va'>peakareas</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>Group</span>,<span class='va'>species</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span><span class='op'>(</span>logmean<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>logpeakarea</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>species</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span><span class='op'>(</span>log2FC<span class='op'>=</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/nth.html'>last</a></span><span class='op'>(</span><span class='va'>logmean</span><span class='op'>)</span><span class='op'>-</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/nth.html'>first</a></span><span class='op'>(</span><span class='va'>logmean</span><span class='op'>)</span><span class='op'>)</span> 
+
+<span class='va'>signi</span><span class='op'>&lt;-</span> <span class='va'>peakareas</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>species</span>, <span class='va'>Class</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://rpkgs.datanovia.com/rstatix/reference/t_test.html'>t_test</a></span><span class='op'>(</span><span class='va'>logpeakarea</span><span class='op'>~</span><span class='va'>Group</span>, p.adjust.method <span class='op'>=</span> <span class='st'>"bonferroni"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://rpkgs.datanovia.com/rstatix/reference/add_significance.html'>add_significance</a></span><span class='op'>(</span><span class='st'>"p"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>log2FC<span class='op'>=</span><span class='va'>foldchange</span><span class='op'>$</span><span class='va'>log2FC</span><span class='op'>)</span>
+
+<span class='va'>colorpalette15</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"#61b0c1"</span>,
+<span class='st'>"#8f46d6"</span>,
+<span class='st'>"#a8ce42"</span>,
+<span class='st'>"#cb46b4"</span>,
+<span class='st'>"#65bf8a"</span>,
+<span class='st'>"#48276e"</span>,
+<span class='st'>"#989e53"</span>,
+<span class='st'>"#6770d6"</span>,
+<span class='st'>"#c75d32"</span>,
+<span class='st'>"#6d8ec8"</span>,
+<span class='st'>"#c14c6b"</span>,
+<span class='st'>"#95b0a6"</span>,
+<span class='st'>"#645043"</span>,
+<span class='st'>"#c17cc5"</span>,
+<span class='st'>"#a07a99"</span>
+<span class='op'>)</span>
+
+<span class='va'>signi</span><span class='op'>&lt;-</span> <span class='va'>signi</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>Class <span class='op'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_relevel.html'>fct_relevel</a></span><span class='op'>(</span><span class='va'>Class</span>, 
+            <span class='st'>"PC"</span>,<span class='st'>"PE"</span>, <span class='st'>"PG"</span>, <span class='st'>"PI"</span>, <span class='st'>"PS"</span>, <span class='st'>"LPC"</span>, <span class='st'>"Plasmanyl-LPC"</span>, <span class='st'>"Plasmenyl-PE"</span>, <span class='st'>"HBMP"</span>, <span class='st'>"BMP"</span>,<span class='st'>"SM"</span>, <span class='st'>"Cer-NS"</span>, <span class='st'>"DG"</span>,<span class='st'>"TG"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>species<span class='op'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_reorder.html'>fct_reorder</a></span><span class='op'>(</span><span class='va'>species</span>, <span class='va'>Class</span>, .fun <span class='op'>=</span> <span class='va'>identity</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>avgpeakareas</span><span class='op'>&lt;-</span><span class='va'>peakareas</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>Group</span>,<span class='va'>Batch</span>,<span class='va'>species</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise_all.html'>summarise_all</a></span><span class='op'>(</span><span class='va'>mean</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>Group</span>,<span class='va'>species</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span><span class='op'>(</span>mean<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>peakarea</span><span class='op'>)</span>,sd<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/stats/sd.html'>sd</a></span><span class='op'>(</span><span class='va'>peakarea</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>Class <span class='op'>=</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_extract.html'>str_extract</a></span><span class='op'>(</span><span class='va'>species</span>, <span class='st'>"^[^(]+"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>colormatch</span><span class='op'>&lt;-</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/tibble.html'>tibble</a></span><span class='op'>(</span>Class<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"PC"</span>,<span class='st'>"PE"</span>, <span class='st'>"PG"</span>, <span class='st'>"PI"</span>, <span class='st'>"PS"</span>, <span class='st'>"LPC"</span>, <span class='st'>"Plasmanyl-LPC"</span>, <span class='st'>"Plasmenyl-PE"</span>, <span class='st'>"HBMP"</span>, <span class='st'>"BMP"</span>,<span class='st'>"SM"</span>, <span class='st'>"Cer-NS"</span>, <span class='st'>"DG"</span>,<span class='st'>"TG"</span><span class='op'>)</span>,
+            color<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"#61b0c1"</span>,
+<span class='st'>"#8f46d6"</span>,
+<span class='st'>"#a8ce42"</span>,
+<span class='st'>"#cb46b4"</span>,
+<span class='st'>"#65bf8a"</span>,
+<span class='st'>"#48276e"</span>,
+<span class='st'>"#989e53"</span>,
+<span class='st'>"#6770d6"</span>,
+<span class='st'>"#c75d32"</span>,
+<span class='st'>"#6d8ec8"</span>,
+<span class='st'>"#c14c6b"</span>,
+<span class='st'>"#95b0a6"</span>,
+<span class='st'>"#645043"</span>,
+<span class='st'>"#c17cc5"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='co'># Define UI for application that draws a histogram</span>
+<span class='va'>ui</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/shiny/man/fluidPage.html'>fluidPage</a></span><span class='op'>(</span>
+
+<span class='fu'><a href='https://rdrr.io/pkg/shiny/man/verticalLayout.html'>verticalLayout</a></span><span class='op'>(</span>
+
+            <span class='fu'><a href='https://dreamrs.github.io/shinyWidgets/reference/sliderTextInput.html'>sliderTextInput</a></span><span class='op'>(</span><span class='st'>"pvalue"</span>,
+                        <span class='st'>"p-value less than"</span>,
+                        choices <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.005</span>,<span class='fl'>0.01</span>,<span class='fl'>0.05</span>,<span class='fl'>0.1</span>,<span class='fl'>0.5</span>,<span class='fl'>1</span><span class='op'>)</span>,
+                        selected<span class='op'>=</span> <span class='fl'>1</span>,
+                        grid<span class='op'>=</span><span class='cn'>T</span>,
+                        width<span class='op'>=</span><span class='st'>"200px"</span>
+            <span class='op'>)</span>,
+            <span class='fu'><a href='https://rdrr.io/pkg/shiny/man/radioButtons.html'>radioButtons</a></span><span class='op'>(</span><span class='st'>"Class"</span>,
+                         <span class='st'>"Lipid Class"</span>,
+                         choices <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"All"</span>,<span class='st'>"PC"</span>,<span class='st'>"PE"</span>,<span class='st'>"PG"</span>,<span class='st'>"PI"</span>,<span class='st'>"PS"</span>,<span class='st'>"LPC"</span>,<span class='st'>"Plasmanyl-LPC"</span>,<span class='st'>"Plasmenyl-PE"</span>,<span class='st'>"HBMP"</span>,<span class='st'>"BMP"</span>,<span class='st'>"SM"</span>,<span class='st'>"Cer-NS"</span>,<span class='st'>"DG"</span>,<span class='st'>"TG"</span><span class='op'>)</span>,
+                         selected <span class='op'>=</span> <span class='st'>"All"</span>,
+                         inline<span class='op'>=</span><span class='cn'>T</span>
+<span class='op'>)</span>,
+
+        <span class='co'># Show a plot of the generated distribution</span>
+        <span class='fu'><a href='https://rdrr.io/pkg/shiny/man/sidebarLayout.html'>mainPanel</a></span><span class='op'>(</span>
+           <span class='fu'><a href='https://rdrr.io/pkg/plotly/man/plotly-shiny.html'>plotlyOutput</a></span><span class='op'>(</span><span class='st'>"lipidbubbles"</span><span class='op'>)</span>,
+          <span class='fu'><a href='https://rdrr.io/pkg/plotly/man/plotly-shiny.html'>plotlyOutput</a></span><span class='op'>(</span><span class='st'>"barplot"</span><span class='op'>)</span>
+        <span class='op'>)</span>
+   <span class='op'>)</span>
+<span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h3 id="section-experimental-setup">Experimental setup</h3>
+<p><a id="fig5As"></a></p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span><span class='st'>"./Figures/5A.png"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<div class="figure"><span style="display:block;" id="fig:fig5As"></span>
+<img src="Figures/5A.png" alt="&lt;B&gt;Figure 5. Lipidomic profiling and metabolic labelling of PfGDPD-null parasites show disruption in PC biosynthesis and choline uptake from lysoPC &lt;/B&gt; A) Lipidome analysis of mature cycle 0 GDPD:loxPint:HA schizonts following mock-or RAP-treatment at ring stage. The bubble plot shows the fold change in levels of various lipid species in PfGDPD-null schizonts compared to controls. (3 independent biological replicates) " width="1212" />
+<p class="caption">
+Figure 4: <B>Figure 5. Lipidomic profiling and metabolic labelling of PfGDPD-null parasites show disruption in PC biosynthesis and choline uptake from lysoPC </B> A) Lipidome analysis of mature cycle 0 GDPD:loxPint:HA schizonts following mock-or RAP-treatment at ring stage. The bubble plot shows the fold change in levels of various lipid species in PfGDPD-null schizonts compared to controls. (3 independent biological replicates)
+</p>
+</div>
+</div>
+<h3 id="section-figure-1">Figure</h3>
+<p><a id="fig5A"></a></p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Run the application </span>
+<span class='co'>#shinyApp(ui = ui, server = server, options = list(height = 1000))</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="sourceCode" id="section-cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+
+<script type="application/shiny-prerendered" data-context="server-start">
+knitr::opts_chunk$set(echo = FALSE)
+
+#loading all necessary R packages
+
+library("dplyr")
+library("tidyr")
+library("tibble")
+library("ggplot2")
+library("plotly")
+library("ggpubr")
+library("cowplot")
+library("Rmisc")
+library("rstatix")
+library("stringr")
+library("viridis")
+library("RColorBrewer")
+library("magick")
+library("forcats")
+library("colorspace")
+library("png")
+library("patchwork")
+library("shiny")
+library("shinyWidgets")
+library("rmarkdown")
+library("xaringanExtra")
+library("knitr")
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+# Define server logic required to draw a histogram
+
+    output$lipidbubbles <- renderPlotly({
+      pvalue<-input$pvalue
+      class<-input$Class
+      if(class %in% "All"){
+        signi<- signi %>% filter(p < pvalue)
+      }
+      else{
+          signi <- signi %>% filter(p < pvalue,Class %in% class)
+      }
+          plot<- ggplot(signi,aes(x=species,y=log2FC,fill=Class)) +
+          geom_hline(yintercept=0, linetype="dashed", color = "grey") +
+          geom_point(aes(size = -log10(p)), shape=21, stroke=0.1) +
+          scale_fill_manual(values = colorpalette15,
+                            breaks=c("PC","PE", "PG", "PI", "PS", "LPC", "Plasmanyl-LPC", 
+                                     "Plasmenyl-PE", "HBMP", "BMP", "SM", "Cer-NS", "DG","TG")) +
+          scale_size(breaks=c(0.01,1.3,3.27),limits=c(0.01,3.27)) +
+          theme_bw() +
+          theme(axis.text=element_text(color="black"), 
+                axis.text.x = element_blank(),
+                axis.ticks.x = element_blank(),
+                axis.title.x = element_blank(),
+                panel.grid=element_blank(), 
+                panel.background=element_blank(),
+                legend.position = "none") +
+          ylab("log2( + RAP / - RAP)")
+          ggplotly(plot, tooltip=c("x","y","size"))
+          })
+    
+    
+    output$barplot<-renderPlotly({
+      pvalue<-input$pvalue
+      class<-input$Class
+      color<-colormatch[colormatch$Class %in% class,]$color
+      if(class %in% "All"){
+        return(NULL)
+      }
+      else{
+        signi <- signi %>% filter(p < pvalue,Class %in% class)
+        avgpeakareas<- avgpeakareas %>% filter(species %in% signi$species)
+      }
+      pbar<-ggplot(avgpeakareas,aes(x=reorder(species,-mean),y=mean,fill=Group)) +
+      geom_bar(position=position_dodge(), stat="identity") +
+      geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd), width=.2,size=0.1,position=position_dodge(0.9)) +
+     scale_fill_manual(values = c(lighten(color,amount=0.75),color)) +
+        theme_minimal() +
+        theme(axis.text=element_text(size=10,color="black"), 
+            axis.text.x = element_text(angle = 45, hjust = 1),
+            aspect.ratio = 1/7,
+            legend.position = "bottom") +
+      xlab(element_blank()) +
+      ylab("Relative Abundance")
+      ggplotly(pbar, tooltip=c("x","y"))
+    })
+
+</script>
+ <!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="dependencies">
+{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["header-attrs"]},{"type":"character","attributes":{},"value":["2.13"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/pandoc"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["header-attrs.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.13"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["panelset"]},{"type":"character","attributes":{},"value":["0.2.6"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["panelset"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["panelset.js"]},{"type":"character","attributes":{},"value":["panelset.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["xaringanExtra"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.6.0"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["jquery"]},{"type":"character","attributes":{},"value":["3.6.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/3.6.0"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquery-3.6.0.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquerylib"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["popper"]},{"type":"character","attributes":{},"value":["2.6.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/popper"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["popper.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["distill"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tippy"]},{"type":"character","attributes":{},"value":["6.2.7"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/tippy"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tippy.umd.min.js"]},{"type":"character","attributes":{},"value":["tippy.css","tippy-light-border.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["distill"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["anchor"]},{"type":"character","attributes":{},"value":["4.2.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/anchor"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["anchor.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["distill"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["bowser"]},{"type":"character","attributes":{},"value":["1.9.3"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/bowser"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["bowser.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["distill"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["webcomponents"]},{"type":"character","attributes":{},"value":["2.0.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/webcomponents"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["webcomponents.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["distill"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["distill"]},{"type":"character","attributes":{},"value":["2.2.21"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/distill"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["template.v2.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["distill"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.4"]}]}]}
+</script>
+<!--/html_preserve-->
+<!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="execution_dependencies">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102]}},"value":[{"type":"character","attributes":{},"value":["abind","assertthat","backports","base","bookdown","broom","bslib","cachem","car","carData","cellranger","colorspace","compiler","cowplot","crayon","curl","data.table","datasets","DBI","digest","distill","downlit","dplyr","ellipsis","evaluate","fansi","fastmap","forcats","foreign","generics","ggplot2","ggpubr","ggsignif","glue","graphics","grDevices","grid","gridExtra","gtable","haven","highr","hms","htmltools","htmlwidgets","httpuv","httr","jquerylib","jsonlite","knitr","later","lattice","lazyeval","lifecycle","lubridate","magick","magrittr","memoise","methods","mime","munsell","openxlsx","patchwork","pillar","pkgconfig","plotly","plyr","png","promises","purrr","R6","RColorBrewer","Rcpp","readxl","rio","rlang","rmarkdown","Rmisc","rprojroot","rstatix","sass","scales","shiny","shinyWidgets","stats","stringi","stringr","tibble","tidyr","tidyselect","tools","utf8","utils","vctrs","viridis","viridisLite","withr","xaringanExtra","xfun","xml2","xtable","yaml","zip"]},{"type":"character","attributes":{},"value":["1.4-5","0.2.1","1.2.1","4.0.2","0.25","0.7.9","0.3.0","1.0.6","3.0-11","3.0-4","1.1.0","2.0-2","4.0.2","1.1.1","1.4.1","4.3.2","1.14.0","4.0.2","1.1.1","0.6.27","1.4","0.4.0","1.0.7","0.3.2","0.14","0.5.0","1.1.0","0.5.1","0.8-81","0.1.0","3.3.5","0.4.0","0.6.3","1.4.2","4.0.2","4.0.2","4.0.2","2.3","0.3.0","2.4.3","0.9","1.1.0","0.5.2","1.5.4","1.6.3","1.4.2","0.1.4","1.7.2","1.34","1.3.0","0.20-44","0.2.2","1.0.0","1.8.0","2.7.3","2.0.1","2.0.0","4.0.2","0.11","0.5.0","4.2.4","1.1.1","1.6.2","2.0.3","4.10.0","1.8.6","0.1-7","1.2.0.1","0.3.4","2.5.1","1.1-2","1.0.7","1.3.1","0.5.27","0.4.11","2.13","1.5","2.0.2","0.7.0","0.4.0","1.1.1","1.6.0","0.7.0","4.0.2","1.7.4","1.4.0","3.1.4","1.1.3","1.1.1","4.0.2","1.2.2","4.0.2","0.3.8","0.6.1","0.4.0","2.4.2","0.6.0","0.30","1.3.2","1.8-4","2.2.1","2.2.0"]}]}]}
+</script>
+<!--/html_preserve-->
+<div id="section-refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="section-ref-Ancelin1986a" class="csl-entry" role="doc-biblioentry">
+Ancelin, M L, and H J Vial. 1986. <span>“Quaternary Ammonium Compounds Efficiently Inhibit Plasmodium Falciparum Growth in Vitro by Impairment of Choline Transport.”</span> <em>Antimicrobial Agents and Chemotherapy</em> 29 (5): 814–20. <a href="https://doi.org/10.1128/aac.29.5.814">https://doi.org/10.1128/aac.29.5.814</a>.
+</div>
+<div id="section-ref-Ancelin2003" class="csl-entry" role="doc-biblioentry">
+Ancelin, Marie L., Michele Calas, Valerie Vidal-Sailhan, Serge Herbute, Pascal Ringwald, and Henri J. Vial. 2003. <span>“Potent Inhibitors of <span><em>Plasmodium</em></span> Phospholipid Metabolism with a Broad Spectrum of In Vitro Antimalarial Activities.”</span> <em>Antimicrobial Agents and Chemotherapy</em> 47 (8): 2590–97. <a href="https://doi.org/10.1128/aac.47.8.2590-2597.2003">https://doi.org/10.1128/aac.47.8.2590-2597.2003</a>.
+</div>
+<div id="section-ref-Ancelin1986" class="csl-entry" role="doc-biblioentry">
+Ancelin, Marie L., and Henri J. Vial. 1986. <span>“Several Lines of Evidence Demonstrating That<span><em>Plasmodium Falciparum</em></span>, a Parasitic Organism, Has Distinct Enzymes for the Phosphorylation of Choline and Ethanolamine.”</span> <em>FEBS Letters</em> 202 (2): 217–23. <a href="https://doi.org/10.1016/0014-5793(86)80690-1">https://doi.org/10.1016/0014-5793(86)80690-1</a>.
+</div>
+<div id="section-ref-Ancelin1989" class="csl-entry" role="doc-biblioentry">
+———. 1989. <span>“Regulation of Phosphatidylcholine Biosynthesis in Plasmodium-Infected Erythrocytes.”</span> <em>Biochimica Et Biophysica Acta (BBA) - Lipids and Lipid Metabolism</em> 1001 (1): 82–89. <a href="https://doi.org/10.1016/0005-2760(89)90310-x">https://doi.org/10.1016/0005-2760(89)90310-x</a>.
+</div>
+<div id="section-ref-Ancelin1985" class="csl-entry" role="doc-biblioentry">
+Ancelin, Marie L., Henri J. Vial, and Jean R. Philippot. 1985. <span>“Inhibitors of Choline Transport into Plasmodium-Infected Erythrocytes Are Effective Antiplasmodial Compounds in Vitro.”</span> <em>Biochemical Pharmacology</em> 34 (22): 4068–71. <a href="https://doi.org/10.1016/0006-2952(85)90390-9">https://doi.org/10.1016/0006-2952(85)90390-9</a>.
+</div>
+<div id="section-ref-Biagini2004b" class="csl-entry" role="doc-biblioentry">
+Biagini, Giancarlo A., Erica M. Pasini, Ruth Hughes, Harry P. De Koning, Henri J. Vial, Paul M. O’Neill, Stephen A. Ward, and Patrick G. Bray. 2004. <span>“Characterization of the Choline Carrier of Plasmodium Falciparum: A Route for the Selective Delivery of Novel Antimalarial Drugs.”</span> <em>Blood</em> 104 (10): 3372–77. <a href="https://doi.org/10.1182/blood-2004-03-1084">https://doi.org/10.1182/blood-2004-03-1084</a>.
+</div>
+<div id="section-ref-Birnbaum2017" class="csl-entry" role="doc-biblioentry">
+Birnbaum, Jakob, Sven Flemming, Nick Reichard, Alexandra Blancke Soares, Paolo Mesén-Ramírez, Ernst Jonscher, Bärbel Bergmann, and Tobias Spielmann. 2017. <span>“A Genetic System to Study Plasmodium Falciparum Protein Function.”</span> <em>Nature Methods</em> 14 (4): 450–56. <a href="https://doi.org/10.1038/nmeth.4223">https://doi.org/10.1038/nmeth.4223</a>.
+</div>
+<div id="section-ref-Botté2013" class="csl-entry" role="doc-biblioentry">
+Botté, Cyrille Y., Yoshiki Yamaryo-Botté, Thusitha W. T. Rupasinghe, Kylie A. Mullin, James I. MacRae, Timothy P. Spurck, Ming Kalanon, et al. 2013. <span>“Atypical Lipid Composition in the Purified Relict Plastid (Apicoplast) of Malaria Parasites.”</span> <em>Proceedings of the National Academy of Sciences</em> 110 (18): 7506–11. <a href="https://doi.org/10.1073/pnas.1301251110">https://doi.org/10.1073/pnas.1301251110</a>.
+</div>
+<div id="section-ref-Brancucci2017" class="csl-entry" role="doc-biblioentry">
+Brancucci, Nicolas M. B., Joseph P. Gerdt, ChengQi Wang, Mariana De Niz, Nisha Philip, Swamy R. Adapa, Min Zhang, et al. 2017. <span>“Lysophosphatidylcholine Regulates Sexual Stage Differentiation in the Human Malaria Parasite Plasmodium Falciparum.”</span> <em>Cell</em> 171 (7): 1532–1544.e15. <a href="https://doi.org/10.1016/j.cell.2017.10.020">https://doi.org/10.1016/j.cell.2017.10.020</a>.
+</div>
+<div id="section-ref-Collins2013" class="csl-entry" role="doc-biblioentry">
+Collins, Christine R., Sujaan Das, Eleanor H. Wong, Nicole Andenmatten, Robert Stallmach, Fiona Hackett, Jean-Paul Herman, Sylke Müller, Markus Meissner, and Michael J. Blackman. 2013. <span>“Robust Inducible Cre Recombinase Activity in the Human Malaria Parasite <span> <em>P Lasmodium Falciparum</em> </span> Enables Efficient Gene Deletion Within a Single Asexual Erythrocytic Growth Cycle.”</span> <em>Molecular Microbiology</em> 88 (4): 687–701. <a href="https://doi.org/10.1111/mmi.12206">https://doi.org/10.1111/mmi.12206</a>.
+</div>
+<div id="section-ref-Contet2015" class="csl-entry" role="doc-biblioentry">
+Contet, Alicia, Emilie Pihan, Marina Lavigne, Kai Wengelnik, Sweta Maheshwari, Henri Vial, Dominique Douguet, and Rachel Cerdan. 2015. <span>“<span><em>Plasmodium Falciparum</em></span>CTP:phosphocholine Cytidylyltransferase Possesses Two Functional Catalytic Domains and Is Inhibited by a CDP-Choline Analog Selected from a Virtual Screening.”</span> <em>FEBS Letters</em> 589 (9): 992–1000. <a href="https://doi.org/10.1016/j.febslet.2015.03.003">https://doi.org/10.1016/j.febslet.2015.03.003</a>.
+</div>
+<div id="section-ref-Denloye2012" class="csl-entry" role="doc-biblioentry">
+Denloye, Titilola, Seema Dalal, and Michael Klemba. 2012. <span>“Characterization of a Glycerophosphodiesterase with an Unusual Tripartite Distribution and an Important Role in the Asexual Blood Stages of Plasmodium Falciparum.”</span> <em>Molecular and Biochemical Parasitology</em> 186 (1): 29–37. <a href="https://doi.org/10.1016/j.molbiopara.2012.09.004">https://doi.org/10.1016/j.molbiopara.2012.09.004</a>.
+</div>
+<div id="section-ref-Fernández-Murray2005" class="csl-entry" role="doc-biblioentry">
+Fernández-Murray, J. Pedro, and Christopher R. McMaster. 2005. <span>“Glycerophosphocholine Catabolism as a New Route for Choline Formation for Phosphatidylcholine Synthesis by the Kennedy Pathway.”</span> <em>Journal of Biological Chemistry</em> 280 (46): 38290–96. <a href="https://doi.org/10.1074/jbc.m507700200">https://doi.org/10.1074/jbc.m507700200</a>.
+</div>
+<div id="section-ref-Gulati2015" class="csl-entry" role="doc-biblioentry">
+Gulati, Sonia, Eric H. Ekland, Kelly V. Ruggles, Robin B. Chan, Bamini Jayabalasingham, Bowen Zhou, Pierre-Yves Mantel, et al. 2015. <span>“Profiling the Essential Nature of Lipid Metabolism in Asexual Blood and Gametocyte Stages of Plasmodium Falciparum.”</span> <em>Cell Host &amp; Microbe</em> 18 (3): 371–81. <a href="https://doi.org/10.1016/j.chom.2015.08.003">https://doi.org/10.1016/j.chom.2015.08.003</a>.
+</div>
+<div id="section-ref-Jumper2021" class="csl-entry" role="doc-biblioentry">
+Jumper, John, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov, Olaf Ronneberger, Kathryn Tunyasuvunakool, et al. 2021. <span>“Highly Accurate Protein Structure Prediction with AlphaFold.”</span> <em>Nature</em> 596 (7873): 583–89. <a href="https://doi.org/10.1038/s41586-021-03819-2">https://doi.org/10.1038/s41586-021-03819-2</a>.
+</div>
+<div id="section-ref-Kilian2018" class="csl-entry" role="doc-biblioentry">
+Kilian, Nicole, Jae-Yeon Choi, Dennis R. Voelker, and Choukri Ben Mamoun. 2018. <span>“Role of Phospholipid Synthesis in the Development and Differentiation of Malaria Parasites in the Blood.”</span> <em>Journal of Biological Chemistry</em> 293 (45): 17308–16. <a href="https://doi.org/10.1074/jbc.r118.003213">https://doi.org/10.1074/jbc.r118.003213</a>.
+</div>
+<div id="section-ref-Moon2013" class="csl-entry" role="doc-biblioentry">
+Moon, Robert W., Joanna Hall, Farania Rangkuti, Yung Shwen Ho, Neil Almond, Graham H. Mitchell, Arnab Pain, Anthony A. Holder, and Michael J. Blackman. 2012. <span>“Adaptation of the Genetically Tractable Malaria Pathogen <span><em>Plasmodium Knowlesi</em></span> to Continuous Culture in Human Erythrocytes.”</span> <em>Proceedings of the National Academy of Sciences</em> 110 (2): 531–36. <a href="https://doi.org/10.1073/pnas.1216457110">https://doi.org/10.1073/pnas.1216457110</a>.
+</div>
+<div id="section-ref-Morita2016" class="csl-entry" role="doc-biblioentry">
+Morita, Junko, Kuniyuki Kano, Kazuki Kato, Hiroyuki Takita, Hideki Sakagami, Yasuo Yamamoto, Emiko Mihara, et al. 2016. <span>“Structure and Biological Function of Enpp6, a Choline-Specific Glycerophosphodiester-Phosphodiesterase.”</span> <em>Scientific Reports</em> 6 (1). <a href="https://doi.org/10.1038/srep20995">https://doi.org/10.1038/srep20995</a>.
+</div>
+<div id="section-ref-Pessi2004" class="csl-entry" role="doc-biblioentry">
+Pessi, Gabriella, Guillermo Kociubinski, and Choukri Ben Mamoun. 2004. <span>“A Pathway for Phosphatidylcholine Biosynthesis in <span><em>Plasmodium Falciparum</em></span> Involving Phosphoethanolamine Methylation.”</span> <em>Proceedings of the National Academy of Sciences</em> 101 (16): 6206–11. <a href="https://doi.org/10.1073/pnas.0307742101">https://doi.org/10.1073/pnas.0307742101</a>.
+</div>
+<div id="section-ref-Rao2006" class="csl-entry" role="doc-biblioentry">
+Rao, Krishnamurthy N., Jeffrey B. Bonanno, Stephen K. Burley, and Subramanyam Swaminathan. 2006. <span>“Crystal Structure of Glycerophosphodiester Phosphodiesterase from Agrobacterium Tumefaciens by SAD with a Large Asymmetric Unit.”</span> <em>Proteins: Structure, Function, and Bioinformatics</em> 65 (2): 514–18. <a href="https://doi.org/10.1002/prot.21079">https://doi.org/10.1002/prot.21079</a>.
+</div>
+<div id="section-ref-Schneider2012" class="csl-entry" role="doc-biblioentry">
+Schneider, Caroline A, Wayne S Rasband, and Kevin W Eliceiri. 2012. <span>“NIH Image to ImageJ: 25 Years of Image Analysis.”</span> <em>Nature Methods</em> 9 (7): 671–75. <a href="https://doi.org/10.1038/nmeth.2089">https://doi.org/10.1038/nmeth.2089</a>.
+</div>
+<div id="section-ref-Serrán-Aguilera2016" class="csl-entry" role="doc-biblioentry">
+Serrán-Aguilera, Lucía, Helen Denton, Belén Rubio-Ruiz, Borja López-Gutiérrez, Antonio Entrena, Luis Izquierdo, Terry K. Smith, Ana Conejo-García, and Ramon Hurtado-Guerrero. 2016. <span>“Plasmodium Falciparum Choline Kinase Inhibition Leads to a Major Decrease in Phosphatidylethanolamine Causing Parasite Death.”</span> <em>Scientific Reports</em> 6 (1). <a href="https://doi.org/10.1038/srep33189">https://doi.org/10.1038/srep33189</a>.
+</div>
+<div id="section-ref-Stewart2012" class="csl-entry" role="doc-biblioentry">
+Stewart, Joanna D., Rosemarie Marchan, Michaela S. Lesjak, Joerg Lambert, Roland Hergenroeder, James K. Ellis, Chung-Ho Lau, et al. 2012. <span>“Choline-Releasing Glycerophosphodiesterase Edi3 Drives Tumor Cell Migration and Metastasis.”</span> <em>Proceedings of the National Academy of Sciences</em> 109 (21): 8155–60. <a href="https://doi.org/10.1073/pnas.1117654109">https://doi.org/10.1073/pnas.1117654109</a>.
+</div>
+<div id="section-ref-Trager1976" class="csl-entry" role="doc-biblioentry">
+Trager, William, and James B. Jensen. 1976. <span>“Human Malaria Parasites in Continuous Culture.”</span> <em>Science</em> 193 (4254): 673–75. <a href="https://doi.org/10.1126/science.781840">https://doi.org/10.1126/science.781840</a>.
+</div>
+<div id="section-ref-Varadi2022" class="csl-entry" role="doc-biblioentry">
+Varadi, Mihaly, Stephen Anyango, Mandar Deshpande, Sreenath Nair, Cindy Natassia, Galabina Yordanova, David Yuan, et al. 2021. <span>“AlphaFold Protein Structure Database: Massively Expanding the Structural Coverage of Protein-Sequence Space with High-Accuracy Models.”</span> <em>Nucleic Acids Research</em> 50 (D1): D439–44. <a href="https://doi.org/10.1093/nar/gkab1061">https://doi.org/10.1093/nar/gkab1061</a>.
+</div>
+<div id="section-ref-Vial1984" class="csl-entry" role="doc-biblioentry">
+Vial, Henri J., Monique J. Thuet, and Jean R. Philippot. 1984. <span>“Cholinephosphotransferase and Ethanolaminephosphotransferase Activities in Plasmodium Knowlesi-Infected Erythrocytes.”</span> <em>Biochimica Et Biophysica Acta (BBA) - Lipids and Lipid Metabolism</em> 795 (2): 372–83. <a href="https://doi.org/10.1016/0005-2760(84)90088-2">https://doi.org/10.1016/0005-2760(84)90088-2</a>.
+</div>
+<div id="section-ref-Wein2018" class="csl-entry" role="doc-biblioentry">
+Wein, Sharon, Salma Ghezal, Corinne Buré, Marjorie Maynadier, Christian Périgaud, Henri J. Vial, Isabelle Lefebvre-Tournier, Kai Wengelnik, and Rachel Cerdan. 2018. <span>“Contribution of the Precursors and Interplay of the Pathways in the Phospholipid Metabolism of the Malaria Parasite.”</span> <em>Journal of Lipid Research</em> 59 (8): 1461–71. <a href="https://doi.org/10.1194/jlr.m085589">https://doi.org/10.1194/jlr.m085589</a>.
+</div>
+<div id="section-ref-Witola2008" class="csl-entry" role="doc-biblioentry">
+Witola, William Harold, Kamal El Bissati, Gabriella Pessi, Changan Xie, Paul D. Roepe, and Choukri Ben Mamoun. 2008. <span>“Disruption of the Plasmodium Falciparum PfPMT Gene Results in a Complete Loss of Phosphatidylcholine Biosynthesis via the Serine-Decarboxylase-Phosphoethanolamine-Methyltransferase Pathway and Severe Growth and Survival Defects.”</span> <em>Journal of Biological Chemistry</em> 283 (41): 27636–43. <a href="https://doi.org/10.1074/jbc.m804360200">https://doi.org/10.1074/jbc.m804360200</a>.
+</div>
+<div id="section-ref-Zhang2018a" class="csl-entry" role="doc-biblioentry">
+Zhang, Min, Chengqi Wang, Thomas D. Otto, Jenna Oberstaller, Xiangyun Liao, Swamy R. Adapa, Kenneth Udenze, et al. 2018. <span>“Uncovering the Essential Genes of the Human Malaria Parasite <span><em>Plasmodium Falciparum</em></span> by Saturation Mutagenesis.”</span> <em>Science</em> 360 (6388). <a href="https://doi.org/10.1126/science.aap7847">https://doi.org/10.1126/science.aap7847</a>.
+</div>
+</div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

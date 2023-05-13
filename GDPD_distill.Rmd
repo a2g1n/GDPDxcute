@@ -1,0 +1,425 @@
+---
+title: "A choline-releasing glycerophosphodiesterase essential for phosphatidylcholine biosynthesis and blood stage development in the malaria parasite"
+description: |
+  A new article created using the Distill format.
+
+date: "`r Sys.Date()`"
+
+author:
+  - name: "Abhinay Ramaprasad" 
+    url: https://github.com/yihui
+    affiliation: Malaria Biochemistry Laboratory The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Paul-Christian Burda"
+    url: https://github.com/yihui
+    affiliation: "Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg"
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Enrica Calvani" 
+    url: https://github.com/yihui
+    affiliation: Mass Spectrometry Science Technology Platform, The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Aaron Sait" 
+    url: https://github.com/yihui
+    affiliation: Electron Microscopy Science Technology Platform, The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Susana Alejandra Palma-Duran"
+    url: https://github.com/yihui
+    affiliation: Mass Spectrometry Science Technology Platform, The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Chrislaine Withers-Martinez"
+    url: https://github.com/yihui
+    affiliation: Malaria Biochemistry Laboratory, The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Fiona Hackett"
+    url: https://github.com/yihui
+    affiliation: Malaria Biochemistry Laboratory, The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "James MacRae" 
+    url: https://github.com/yihui
+    affiliation: Mass Spectrometry Science Technology Platform, The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Lucy Collinson"
+    url: https://github.com/yihui
+    affiliation: Electron Microscopy Science Technology Platform, The Francis Crick Institute
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Tim-Wolf Gilberger" 
+    url: https://github.com/yihui
+    affiliation: "Centre for Structural Systems Biology | Bernhard Nocht Institute for Tropical Medicine | University of Hamburg"
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+  - name: "Michael J Blackman"
+    url: https://github.com/yihui
+    affiliation: "Malaria Biochemistry Laboratory, The Francis Crick Institute | Faculty of Infectious and Tropical Diseases, London School of Hygiene & Tropical Medicine"
+    affiliation_url: https://example.com/spacelysprokets
+    orcid_id: 0000-0003-0645-5666
+output: 
+  distill::distill_article:
+    toc: true
+    number_sections: true
+    toc_depth: 6
+    code_folding: true
+  toc_float: 
+    collapsed: false
+    smooth_scroll: true
+runtime: shiny_prerendered
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+#loading all necessary R packages
+
+library("dplyr")
+library("tidyr")
+library("tibble")
+library("ggplot2")
+library("plotly")
+library("ggpubr")
+library("cowplot")
+library("Rmisc")
+library("rstatix")
+library("stringr")
+library("viridis")
+library("RColorBrewer")
+library("magick")
+library("forcats")
+library("colorspace")
+library("png")
+library("patchwork")
+library("shiny")
+library("shinyWidgets")
+library("rmarkdown")
+library("xaringanExtra")
+library("knitr")
+```
+
+# Abstract
+
+The malaria parasite *Plasmodium falciparum* synthesizes significant amounts of phospholipids to meet the demands of replication within red blood cells.
+De novo phosphatidylcholine (PC) biosynthesis via the Kennedy pathway is essential, requiring choline that is primarily sourced from host serum lysophosphatidylcholine (lysoPC).
+LysoPC also acts as an environmental sensor to regulate parasite sexual differentiation.
+Despite these critical roles for host lysoPC, the enzyme(s) involved in its breakdown to free choline for PC synthesis are unknown.
+Here we show that a parasite glycerophosphodiesterase (PfGDPD) is indispensable for blood stage parasite proliferation.
+Exogenous choline rescues growth of PfGDPD-null parasites, directly linking PfGDPD function to choline incorporation.
+Loss of PfGDPD reduces choline uptake from lysoPC, resulting in depletion of several PC species in the parasite, whilst purified PfGDPD releases choline from glycerophosphocholine *in vitro*.
+Our results identify PfGDPD as a choline-releasing glycerophosphodiesterase that mediates a critical step in PC biosynthesis and parasite survival.
+
+# Introduction
+
+## Importance of phospholipid synthesis
+
+Malaria parasites replicate within red blood cells (RBC).
+During intraerythrocytic growth, the parasite produces *de novo* large amounts of membrane to support expansion of its parasite plasma membrane (PPM), the parasitophorous vacuole membrane (PVM) and other membranous structures of the growing parasite, as well as for formation of daughter merozoites.
+This extensive membrane neogenesis, which culminates in a six-fold increase in the phospholipid content of the infected RBC [@Wein2018], requires an intense phase of phospholipid synthesis during the metabolically active trophozoite and schizont stages of the parasite life cycle.
+
+## Phosphatidylcholine biosynthesis
+
+Phosphatidylcholine (PC) is the most abundant membrane lipid in the malaria parasite, comprising 30-40% of total phospholipid [@Botté2013; @Gulati2015], and the parasite has evolved to produce this vital phospholipid via multiple enzymatic pathways from a variety of metabolic precursors from the host milieu [@Wein2018; @Kilian2018] (Figure \@ref(fig:fig1)). Under normal conditions, \~89% of PC is synthesized from free choline and fatty acids via the CDP-choline-dependent Kennedy pathway that is common among eukaryotes[@Brancucci2017; @Wein2018].
+Choline is phosphorylated to phosphocholine (P-Cho) by choline kinase (CK) [@Ancelin1986], then converted to CDP-choline by a CTP:phosphocholine cytidyltransferase (CCT) [@Ancelin1989] and finally condensed with diacylglycerol (DAG) by a choline/ethanolamine-phosphotransferase (CEPT) [@Vial1984] to produce PC.
+PC is also generated via an alternate serine-decarboxylase-phosphoethanolamine-methyltransferase (SDPM) pathway also found in plants and nematodes, that uses host serine and ethanolamine (Eth) as precursors [@Pessi2004].
+In this case, precursor P-Cho for the CDP-choline pathway is produced by triple methylation of phosphoethanolamine (P-Eth) by a phosphoethanolamine methyltransferase (PMT) [@Witola2008].
+Phosphoethanolamine is in turn generated from ethanolamine sourced either from the serum or converted from serine by an unidentified parasite serine decarboxylase.
+Unlike yeast and mammals, the malaria parasite is unable to convert PE directly to PC through phospholipid methyl transferase activity [@Witola2008], so the Kennedy and SDPM pathways intersect only at the point of PMT activity (Figure \@ref(fig:fig1)).
+PC can also be potentially produced by direct acylation of lysoPC via the Lands' cycle by an unknown lysophosphatidylcholine acyltransferase (LPCAT).
+However, this pathway is considered to not contribute significantly to PC synthesis under normal conditions [@Wein2018].
+
+
+```{r fig1, echo=FALSE, fig.cap= "<B>Phosphatidylcholine (PC) synthesis in malaria parasites.</B> The CDP-choline dependent Kennedy pathway, the SDPM pathway and Lands’ cycle produce PC from the metabolic precursors lysoPC, choline (Cho), ethanolamine (Eth), serine (Ser, including that obtained from digestion of haemoglobin, Hb), and fatty acids, all salvaged from the host milieu. PC is primarily produced through the Kennedy pathway using Cho sourced mainly from serum lysoPC. Breakdown of lysoPC into choline is thought to occur in the parasitophorous vacuole (PV) via a two-step hydrolysis process involving an unidentified lysophospholipase (LPL) and a glycerophosphodiesterase (GDPD; PF3D7_1406300) (this work). Other abbreviations: CCT, CTP:phosphocholine cytidyltransferase; CEPT, choline/ethanolamine-phosphotransferase; CK, choline kinase; DAG, diacylglycerol; EK, ethanolamine kinase; GPC, glycerophosphocholine; LPCAT, lysophosphatidylcholine acyltransferase; PMT, phosphoethanolamine methyltransferase; SD, serine decarboxylase. “?” indicates parasite enzymes not yet identified."}
+knitr::include_graphics("./Figures/Fig1.png")
+```
+## PC biosynthesis is a drug target
+
+The crucial nature of PC biosynthesis for parasite survival has generated interest in the process as a potential target for antimalarial drug development [@Ancelin1986a; @Ancelin1985].
+Choline analogs have potent antimalarial activity [@Ancelin2003], whilst inhibiting or disrupting enzymes in the PC synthesis pathways severely reduces or blocks intraerythrocytic growth.
+As examples of this, compounds that inhibit *P. falciparum* CK (PfCK) [@Serrán-Aguilera2016] or PfCCT [@Contet2015] in the CDP-choline pathway kill the parasite, and disruption of the PfPMT gene to block PC synthesis via the SDPM pathway results in morphological and growth defects but is not lethal [@Witola2008].
+These findings suggest that the CDP-choline pathway provides the major route to PC synthesis whilst the SDPM pathway forms an important alternative route.
+An improved understanding of PC biosynthesis in *Plasmodium* may identify critical enzymes in the process that are potential drug targets.
+
+## Where does the parasite get its choline?
+
+The choline required for PC synthesis is primarily scavenged from host serum.
+Whilst free choline can cross the parasite plasma membrane efficiently through an unidentified carrier, choline transfer from serum into the infected RBC across the erythrocyte membrane is rate-limiting [@Biagini2004b; @Ancelin1985]. Perhaps to overcome this limitation, the parasite has evolved to scavenge most of the required choline from exogenous lysoPC [@Wein2018; @Brancucci2017].
+Intriguingly, lysoPC also acts as an environmental sensor that controls sexual differentiation in *P. falciparum*.
+Active lysoPC metabolism into PC via the CDP-choline pathway prevents sexual commitment while in contrast limited availability of lysoPC reduces formation of asexual progeny and triggers differentiation into the transmissible gametocyte stages [@Brancucci2017].
+Metabolic labelling experiments showed that \~68% of free choline in the parasite comes from exogenous lysoPC, indicating that the majority of the lysoPC is broken down to choline before entering PC synthesis [@Brancucci2017].
+However, it is unclear how and where lysoPC is converted to choline in the parasite and the enzymes involved in process are unknown.
+
+# Question
+
+## Is PfGDPD involved in lysoPC breakdown to choline?
+
+###  {#figure1q}
+
+```{r fig1_hypothesis, echo=FALSE}
+knitr::include_graphics("./Figures/Fig1_hypothesis.png")
+```
+
+LysoPC breakdown to free choline requires a two-step hydrolysis reaction: deacylation of lysoPC by a putative lysophospholipase to give glycerophosphocholine (GPC) that is then hydrolysed by a glycerophosphodiester phosphodiesterase (GDPD) to generate choline and glycerol-3-phosphate (G3P) ([Figure 1](#figure1q)).
+GPC catabolism by GDPD has been shown to maintain a choline supply for CDP-choline-dependent PC biosynthesis in model eukaryotes [@Morita2016; @Fernández-Murray2005; @Stewart2012]. Only one putative glycerophosphodiesterase gene (PfGDPD; PF3D7_1406300) has been identified in the malarial genome [@Denloye2012]. The 475-residue predicted protein product has an N-terminal secretory signal peptide and a glycerophosphodiester phosphodiesterase domain (amino acid residues 24-466; InterPro entry IPR030395), which likely adopts a triosephosphate isomerase (TIM) barrel alpha/beta fold (<https://alphafold.ebi.ac.uk/entry/Q8IM31>) [@Rao2006; @Jumper2021; @Varadi2022].
+The protein shares homology with prokaryotic GDPDs and contains a characteristic small GDPD-specific insertion (residues 75-275) within the TIM barrel structure.
+Recombinant PfGDPD has been shown to have hydrolytic activity towards GPC and localization studies have suggested that the protein is present in the parasite digestive vacuole (in which breakdown of host haemoglobin takes place), as well as the cytoplasm and parasitophorous vacuole (PV) [@Denloye2012].
+Repeated failed attempts to disrupt the PfGDPD gene [@Denloye2012] and a genome-wide mutagenesis screen [@Zhang2018a] suggests its essentiality for asexual stage growth.
+However, its role in parasite phospholipid metabolism remains unknown.
+
+Here, we used a conditional gene disruption approach combined with chemical complementation and metabolomic analysis to examine the essentiality and function of PfGDPD in asexual blood stages of *P. falciparum*.
+Our results show that PfGDPD catalyzes a catabolic reaction that is key for lysoPC incorporation and PC synthesis in the parasite.
+
+# Results
+
+## Catalytically active PfGDPD is essential for *P. falciparum* blood stage growth {#result1}
+
+### Where does PfGDPD localise to?
+
+To confirm the previously shown subcellular localization of PfGDPD [@Denloye2012], we tagged the endogenous protein at its C-terminus by fusing the gene to sequence encoding green fluorescent protein (GFP), using the selection-linked integration (SLI) system [@Birnbaum2017] (Supplementary figure 1A).
+We verified correct integration of the targeting plasmid into the GDPD locus by PCR (Supplementary figure 1B).
+Live-cell microscopy of the resulting transgenic parasites revealed a cytoplasmic and PV localization (Figure 2A), supporting the results of the previous study [@Denloye2012].
+
+```{r panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+::: {.l-page} 
+::: {.panelset}
+::: {.panel}
+
+#### Figure {.panel-name}
+
+```{r fig2A, echo=FALSE, out.width= "75%", fig.cap= "<B>Figure 2. Subcellular localization and conditional ablation of PfGDPD.</B> A) Endogenous PfGDPD tagged with GFP shows dual localization in the cytosol and PV in mature schizonts (top) and free merozoites (bottom). Scale bars, 5 $\\mu$m."}
+include_graphics("./Figures/2A.png")
+```
+:::
+
+::: {.panel}
+#### Supplementary Figure {.panel-name}
+
+```{r figS1AB, echo=FALSE, out.width= "100%", fig.cap= "<B>Supplementary Figure 1. Endogenous tagging and conditional disruption of PfGDPD.</B> A) Schematic of SLI-based endogenous tagging of PfGDPD. GFP, green fluorescent protein; T2A, skip peptide; Neo-R, neomycin-resistance gene; hDHFR, human dihydrofolate reductase; asterisks, stop codons; arrows, promoters. B) Diagnostic PCR showing correct integration of the GFP-tagging construct in the GDPD locus."}
+knitr::include_graphics("./Figures/S1AB.png")
+```
+:::
+
+::: {.panel}
+
+#### Methods {.panel-name}
+
+##### Plasmid construction
+
+<font size="2">
+
+The GDPD:GFP line was made by endogenously tagging GDPD with GFP using the selection-linked integration (SLI) method [@Birnbaum2017].
+A GFP-tagging construct pSLI-PF3D7_1406300-GFP-GlmS-WT was generated by amplifying the C-terminal 858 bp of the endogenous gdpd gene (PF3D7_1406300) by PCR using primers PF3D7_1406300-TAG-fw/ PF3D7_1406300-TAG-rev and cloning into pSLI-GFP-GlmS-WT using NotI/MluI.
+
+</font>
+
+##### Parasite culture maintenance, synchronisation and transfection
+
+<font size="2">
+
+*P. falciparum* 3D7 line was maintained at 37°C in an atmosphere of 1% O~2~, 5% CO~2~, and 94% N~2~ and cultured using RPMI complete medium containing 0.5% Albumax according to standard procedures [@Trager1976].
+For generation of stable integrant cell line GDPD:GFP, mature schizonts of 3D7 parasites were electroporated with 50 $\mu$g of plasmid DNA using a Lonza Nucleofector II device [@Moon2013].
+Parasites were first selected in medium supplemented with 3 nM WR99210 (Jacobus Pharmaceuticals).
+Parasites containing the episomal plasmids selected with WR99210 were subsequently grown with 400 μg/ml Neomycin/G418 (Sigma) to select for integrants carrying the desired genomic modification as described previously [@Birnbaum2017].
+Successful integration was confirmed by diagnostic PCR using FIREpol DNA polymerase (Solis BioDyne).
+
+</font>
+
+##### Live cell microscopy
+
+<font size="2">
+
+For live cell microscopy of GDPD:GFP parasites, parasites were incubated with 1 μg/ml DAPI in culture medium for 15 minutes at 37°C to stain nuclei before microscopic analysis.
+Parasite line was imaged on a Leica D6B fluorescence microscope, equipped with a Leica DFC9000 GT camera and a Leica Plan Apochromat 100x/1.4 oil objective.
+Image processing was performed using ImageJ [@Schneider2012].
+
+</font>
+:::
+
+::: {.panel}
+#### Sequences {.panel-name}
+
+<a href="./Rawdata/GDPDGFP_oligos.xlsx" download>Click to Download</a>
+
+:::
+:::
+:::
+
+
+
+### Conditional ablation of PfGDPD expression
+
+Our attempts to knockout the pfgdpd gene using SLI-based targeted gene disruption failed, suggesting that PfGDPD fulfils an essential function for *P. falciparum* blood stage growth as previously suggested.
+To address the essentiality and function of PfGDPD, we used a conditional gene disruption strategy to delete sequence encoding the catalytic glycerophosphodiester phosphodiesterase domain.
+For this, we first flanked ("floxed") the region with loxP sites using Cas9-enhanced homologous recombination in a *P. falciparum* line stably expressing DiCre, a rapamycin (RAP) inducible form of Cre recombinase [@Collins2013] (Figure 2B and Supplementary Figure 1J).
+A triple-hemagglutinin (3HA) epitope was simultaneously fused to the C-terminal end of the gene product, allowing confirmation of PfGDPD expression in the modified parasite line (called GDPD:loxPint:HA).
+
+```{r,warning=FALSE,message=FALSE}
+
+peakareas <- read.csv("./Rawdata/GDPDlipidomics_exp1.csv")
+
+foldchange<-peakareas %>% group_by(Group,species) %>% 
+  dplyr::summarise(logmean=mean(logpeakarea)) %>% 
+  group_by(species) %>% 
+  dplyr::summarise(log2FC=last(logmean)-first(logmean)) 
+
+signi<- peakareas %>% group_by(species, Class) %>% t_test(logpeakarea~Group, p.adjust.method = "bonferroni") %>% add_significance("p") %>% mutate(log2FC=foldchange$log2FC)
+
+colorpalette15<-c("#61b0c1",
+"#8f46d6",
+"#a8ce42",
+"#cb46b4",
+"#65bf8a",
+"#48276e",
+"#989e53",
+"#6770d6",
+"#c75d32",
+"#6d8ec8",
+"#c14c6b",
+"#95b0a6",
+"#645043",
+"#c17cc5",
+"#a07a99"
+)
+
+signi<- signi %>%
+  mutate(Class = fct_relevel(Class, 
+            "PC","PE", "PG", "PI", "PS", "LPC", "Plasmanyl-LPC", "Plasmenyl-PE", "HBMP", "BMP","SM", "Cer-NS", "DG","TG")) %>%
+  mutate(species= fct_reorder(species, Class, .fun = identity))
+
+avgpeakareas<-peakareas %>%
+  group_by(Group,Batch,species) %>% 
+  summarise_all(mean) %>%
+  group_by(Group,species) %>%
+  dplyr::summarise(mean=mean(peakarea),sd=sd(peakarea)) %>% 
+  mutate(Class = str_extract(species, "^[^(]+"))
+
+colormatch<-tibble(Class=c("PC","PE", "PG", "PI", "PS", "LPC", "Plasmanyl-LPC", "Plasmenyl-PE", "HBMP", "BMP","SM", "Cer-NS", "DG","TG"),
+            color=c("#61b0c1",
+"#8f46d6",
+"#a8ce42",
+"#cb46b4",
+"#65bf8a",
+"#48276e",
+"#989e53",
+"#6770d6",
+"#c75d32",
+"#6d8ec8",
+"#c14c6b",
+"#95b0a6",
+"#645043",
+"#c17cc5"))
+
+# Define UI for application that draws a histogram
+ui <- fluidPage(
+
+verticalLayout(
+
+            sliderTextInput("pvalue",
+                        "p-value less than",
+                        choices = c(0.005,0.01,0.05,0.1,0.5,1),
+                        selected= 1,
+                        grid=T,
+                        width="200px"
+            ),
+            radioButtons("Class",
+                         "Lipid Class",
+                         choices = c("All","PC","PE","PG","PI","PS","LPC","Plasmanyl-LPC","Plasmenyl-PE","HBMP","BMP","SM","Cer-NS","DG","TG"),
+                         selected = "All",
+                         inline=T
+),
+
+
+        # Show a plot of the generated distribution
+        mainPanel(
+           plotlyOutput("lipidbubbles"),
+          plotlyOutput("barplot")
+        )
+   )
+)
+```
+
+```{r, context="server"}
+# Define server logic required to draw a histogram
+
+    output$lipidbubbles <- renderPlotly({
+      pvalue<-input$pvalue
+      class<-input$Class
+      if(class %in% "All"){
+        signi<- signi %>% filter(p < pvalue)
+      }
+      else{
+          signi <- signi %>% filter(p < pvalue,Class %in% class)
+      }
+          plot<- ggplot(signi,aes(x=species,y=log2FC,fill=Class)) +
+          geom_hline(yintercept=0, linetype="dashed", color = "grey") +
+          geom_point(aes(size = -log10(p)), shape=21, stroke=0.1) +
+          scale_fill_manual(values = colorpalette15,
+                            breaks=c("PC","PE", "PG", "PI", "PS", "LPC", "Plasmanyl-LPC", 
+                                     "Plasmenyl-PE", "HBMP", "BMP", "SM", "Cer-NS", "DG","TG")) +
+          scale_size(breaks=c(0.01,1.3,3.27),limits=c(0.01,3.27)) +
+          theme_bw() +
+          theme(axis.text=element_text(color="black"), 
+                axis.text.x = element_blank(),
+                axis.ticks.x = element_blank(),
+                axis.title.x = element_blank(),
+                panel.grid=element_blank(), 
+                panel.background=element_blank(),
+                legend.position = "none") +
+          ylab("log2( + RAP / - RAP)")
+          ggplotly(plot, tooltip=c("x","y","size"))
+          })
+    
+    
+    output$barplot<-renderPlotly({
+      pvalue<-input$pvalue
+      class<-input$Class
+      color<-colormatch[colormatch$Class %in% class,]$color
+      if(class %in% "All"){
+        return(NULL)
+      }
+      else{
+        signi <- signi %>% filter(p < pvalue,Class %in% class)
+        avgpeakareas<- avgpeakareas %>% filter(species %in% signi$species)
+      }
+      pbar<-ggplot(avgpeakareas,aes(x=reorder(species,-mean),y=mean,fill=Group)) +
+      geom_bar(position=position_dodge(), stat="identity") +
+      geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd), width=.2,size=0.1,position=position_dodge(0.9)) +
+     scale_fill_manual(values = c(lighten(color,amount=0.75),color)) +
+        theme_minimal() +
+        theme(axis.text=element_text(size=10,color="black"), 
+            axis.text.x = element_text(angle = 45, hjust = 1),
+            aspect.ratio = 1/7,
+            legend.position = "bottom") +
+      xlab(element_blank()) +
+      ylab("Relative Abundance")
+      ggplotly(pbar, tooltip=c("x","y"))
+    })
+
+```
+
+### Experimental setup
+
+<a id="fig5As"></a>
+
+```{r fig5As, echo=FALSE, fig.cap= "<B>Figure 5. Lipidomic profiling and metabolic labelling of PfGDPD-null parasites show disruption in PC biosynthesis and choline uptake from lysoPC </B> A) Lipidome analysis of mature cycle 0 GDPD:loxPint:HA schizonts following mock-or RAP-treatment at ring stage. The bubble plot shows the fold change in levels of various lipid species in PfGDPD-null schizonts compared to controls. (3 independent biological replicates) "}
+knitr::include_graphics("./Figures/5A.png")
+```
+
+### Figure
+
+<a id="fig5A"></a>
+
+```{r fig5A, echo=FALSE, fig.cap= "<B>Figure 5. Lipidomic profiling and metabolic labelling of PfGDPD-null parasites show disruption in PC biosynthesis and choline uptake from lysoPC. </B> A) Lipidome analysis of mature cycle 0 GDPD:loxPint:HA schizonts following mock-or RAP-treatment at ring stage. The bubble plot shows the fold change in levels of various lipid species in PfGDPD-null schizonts compared to controls. (3 independent biological replicates)"}
+
+
+# Run the application 
+#shinyApp(ui = ui, server = server, options = list(height = 1000))
+
+```

@@ -967,18 +967,19 @@ prates<- ggplot(GDPD.Cho.rates,
 stat_summary(fun = median, fun.min = median, fun.max = median,
                  geom = "crossbar", width = 0.5) +
   theme_bw() +
-  scale_fill_manual(values = c("#BBBBBB","#CC3311","#BBBBBB","#CC3311","#BBBBBB","#CC3311","#BBBBBB","#CC3311")) +
+  scale_fill_manual(values = c("#BBBBBB","#CC3311","#BBBBBB","#CC3311","#BBBBBB","#CC3311","#BBBBBB","#CC3311","#BBBBBB","#CC3311")) +
   theme(axis.text=element_text(color="black"),
         axis.text.x = element_text(angle = 45, hjust = 1),
         panel.grid=element_blank(),
         panel.background=element_blank(),
         legend.position = "none") +
   xlab("Treatment") +
-  ylab("Average Fold Increase")
+  ylab("Average Fold Increase") 
 
 pwc <- GDPD.Cho.rates %>%
   t_test(Average.Fold.Increase ~Line, p.adjust.method = "bonferroni") %>% 
   filter(group1==" +Cho -RAP" & group2==" +Cho +RAP" |
+           group1==" +GPC -RAP" & group2==" +GPC +RAP" |
            group1==" +Eth -RAP" & group2==" +Eth +RAP" |
            group1==" +Ser -RAP" & group2==" +Ser +RAP" |
            group1==" -Cho -RAP" & group2==" -Cho +RAP") %>%
@@ -989,7 +990,8 @@ prates <- prates + stat_pvalue_manual(
     pwc, label = "p.adj.signif", tip.length = 0.01,
     bracket.nudge.y = 2
     ) +
-  scale_y_continuous(expand = expansion(mult = c(0.1, 0.1)))
+  scale_y_continuous(expand = expansion(mult = c(0.1, 0.1)),
+                     limits = c(0,10))
 
 #plotly does not work with geom_dotplot
 ```
@@ -1429,8 +1431,8 @@ signilabel<- data.prop %>% filter(heavy=="d9") %>%
   drop_na(labprop) %>% group_by(species) %>% t_test(formula=labprop~Group,alternative="two.sided",ref.group =c("RAP_d9"),detailed = T,)
 
 reordered_species<- fct_reorder(signilabel$species, signilabel$p, .desc = TRUE)
-pDiff <- signilabel %>% ggplot(aes(y=estimate, x=reordered_species)) +
-  geom_pointrange(aes(ymin=conf.low, ymax=conf.high)) +
+pDiff <- signilabel %>% ggplot(aes(y=estimate/estimate2, x=reordered_species)) +
+  geom_pointrange(aes(ymin=conf.low/estimate2, ymax=conf.high/estimate2)) +
   theme_minimal() +
   theme(axis.title.y = element_blank(),axis.text.y = element_blank()) +
   ylab("difference in proportions (+RAP/-RAP)")+
