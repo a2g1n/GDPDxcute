@@ -189,7 +189,7 @@ Image processing was performed using ImageJ [@Schneider2012].
 
 #### Sequences
 
-<a href="https://github.com/a2g1n/GDPDxcute/blob/main/Rawdata/B4G1Chorates.csv./Rawdata/GDPDGFP_oligos.xlsx" download>Click to Download</a>
+<a href="https://github.com/a2g1n/GDPDxcute/blob/main/Rawdata/GDPDGFP_oligos.xlsx" download>Click to Download</a>
 
 ###  {.unnumbered}
 
