@@ -189,7 +189,7 @@ Image processing was performed using ImageJ [@Schneider2012].
 
 #### Sequences
 
-<a href="https://github.com/a2g1n/GDPDxcute/blob/main/Rawdata/GDPDGFP_oligos.xlsx" download>Click to Download</a>
+<a href="GDPDGFP_oligos.xlsx" download>Click to Download</a>
 
 ###  {.unnumbered}
 
@@ -255,7 +255,7 @@ Successful integration was confirmed by running diagnostic PCR either directly o
 
 ### Sequences
 
-<a href="./Rawdata/GDPDloxPintHA_oligos.xlsx" download>Click to Download</a>
+<a href="GDPDloxPintHA_oligos.xlsx" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -371,7 +371,7 @@ Average fold increase in parasitaemia was calculated by averaging fold increase 
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDgrowthassay.csv" download>Click to Download</a>
+<a href="GDPDgrowthassay.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -439,7 +439,7 @@ Bound primary antibodies were detected using goat-anti-rat-AlexaFluor594 seconda
 
 ### Sequences
 
-<a href="./Rawdata/GDPDloxPintHANeoR_oligos.xlsx" download>Click to Download</a>
+<a href="GDPDloxPintHANeoR_oligos.xlsx" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -533,11 +533,11 @@ Samples were analyzed (100,000 events) on a ACEA NovoCyte flow cytometer.
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDcomplementation.csv" download>Click to Download</a>
+<a href="GDPDcomplementation.csv" download>Click to Download</a>
 
 ### Sequences
 
-<a href="./Rawdata/GDPDcomplementation_oligos.xlsx" download>Click to Download</a>
+<a href="GDPDcomplementation_oligos.xlsx" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -627,7 +627,7 @@ iplot3
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDstagequant.csv" download>Click to Download</a>
+<a href="GDPDstagequant.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -693,7 +693,7 @@ Cultures were sampled before and after the 4 h invasion and fixed as before for 
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDinvasionassay.csv" download>Click to Download</a>
+<a href="GDPDinvasionassay.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -749,7 +749,7 @@ pmerozoites
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDmerozoites.csv" download>Click to Download</a>
+<a href="GDPDmerozoites.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -857,7 +857,7 @@ Only well-focussed haemozoin signals were chosen for quantification using FIJI a
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDpolarisation.csv" download>Click to Download</a>
+<a href="GDPDpolarisation.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -945,7 +945,7 @@ Growth assay was performed as detailed in
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDcholinegrowthassay.csv" download>Click to Download</a>
+<a href="GDPDcholinegrowthassay.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -1019,7 +1019,7 @@ Average fold increase in parasitaemia was calculated by averaging fold increase 
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDrates.csv" download>Click to Download</a>
+<a href="GDPDrates.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -1106,7 +1106,7 @@ knitr::include_graphics("./Figures/4Ei.png")
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDrates.csv" download>Click to Download</a>
+<a href="GDPDrates.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -1147,7 +1147,7 @@ iplot4
 
 ### Raw Data
 
-<a href="./Rawdata/cholinetitrations.csv" download>Click to Download</a>
+<a href="cholinetitrations.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -1379,7 +1379,7 @@ Qualitative and quantitative analyses were performed using Free Style 1.5 (Therm
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDlipidomics_exp1.csv" download>Click to Download</a>
+<a href="GDPDlipidomics_exp1.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -1508,7 +1508,7 @@ LipidMatch was used for identification confirmation (Koelmel et al., 2016).
 
 ### Raw Data
 
-<a href="./Rawdata/B4_d9labelling.csv" download>Click to Download</a>
+<a href="B4_d9labelling.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -1627,7 +1627,7 @@ For metabolic labelling experiments, LC-MS and analysis were performed as before
 
 ### Raw Data
 
-<a href="./Rawdata/B4_d9labelling.csv" download>Click to Download</a>
+<a href="B4_d9labelling.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -1849,7 +1849,7 @@ For metabolic labelling experiments, LC-MS and analysis were performed as before
 
 ### Raw Data
 
-<a href="./Rawdata/GDPDlipidomics_exp2.csv" download>Click to Download</a>
+<a href="GDPDlipidomics_exp2.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
@@ -2018,7 +2018,7 @@ For Coomassie Blue staining, SDS-PAGE gels were stained with InstantBlue Coomass
 
 ### Raw Data 
 
-<a href="./Rawdata/GDPDenzymaticassay.csv" download>Click to Download</a>
+<a href="GDPDenzymaticassay.csv" download>Click to Download</a>
 
 ##  {.unnumbered}
 
